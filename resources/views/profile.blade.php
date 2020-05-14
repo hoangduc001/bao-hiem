@@ -15,6 +15,9 @@
                     @endif
 
                     You are logged in!
+                        <code>
+                            {{\Illuminate\Support\Facades\Auth::user()}}
+                        </code>
                 </div>
             </div>
         </div>
