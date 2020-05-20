@@ -114,7 +114,7 @@
 <!-- Menu -->
 <div class="body-page">
     <div class="page-wrapper">
-    
+    @include('frontend/pages/section1')
         @yield('content')
     </div>
     <!-- Back to top -->

@@ -1,0 +1,24 @@
+.course-wrapper{
+    .section-course{
+        .content-course-wrapper{
+            display: grid;
+            grid-template-columns: 38% 58%;
+            grid-gap: 2%;
+            .left-course{
+                img{
+                    width: 100%;
+                }
+            }
+            .right-course{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap: 20px;
+                .course-item{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
