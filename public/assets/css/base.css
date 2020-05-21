@@ -220,7 +220,9 @@ input[type="color"],
   outline: none;
 }
 
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
   background-color: transparent;
   background-image: none;
   color: black;
@@ -359,16 +361,23 @@ Button
 }
 
 .btn-default {
-  color: #fff;
+  color: #0d723b;
   background-color: transparent;
   border: 1px solid;
   border-color: #b6b6b6;
+  padding: 5px 20px;
+  border: 1px solid #0d723b;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .btn-default:hover {
   color: #fff;
-  background-color: #00a885;
-  border-color: #00a885;
+  background-color: #0d723b;
+  border-color: #fff;
 }
 
 /*
