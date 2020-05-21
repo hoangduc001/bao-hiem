@@ -18,10 +18,9 @@
             ele.timeStartEvent = "Sep 16, 2019 00:00:00";
             ele.slideCustomer = '.swiper-customer';
             ele.slidePartner = '.swiper-partner';
-            // ele.slideContact = '.swiper-contact';
-            ele.slideTreatment = '.swiper-treatment';
+            ele.slideTeacher = '.swiper-teacher';
             ele.slideBanner = '.swiper-banner';
-            ele.slideCouse = '.swiper-couse';
+            ele.slideCourse = '.swiper-course';
             ele.slideSk = '.swiper-sk';
         };
 
@@ -35,15 +34,15 @@
         var slideHome = function() {
             $(function() {
                 var swiper = new Swiper(ele.slideCustomer, {
-                    slidesPerView: 1,
+                    slidesPerView: 3,
                     spaceBetween: 30,
                     autoplay: {
                         delay: 3000,
                     },
-                    // navigation: {
-                    //     nextEl: '.swiper-button-next',
-                    //     prevEl: '.swiper-button-prev',
-                    // },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,
@@ -132,12 +131,12 @@
                         }
                     }
                 });
-                var swiper4 = new Swiper(ele.slideCouse, {
+                var swiper4 = new Swiper(ele.slideCourse, {
                     slidesPerView: 1,
                     // spaceBetween: 30,
-                    // autoplay: {
-                    //     delay: 3000,
-                    // },
+                    autoplay: {
+                        delay: 5000,
+                    },
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
@@ -166,52 +165,9 @@
                         }
                     }
                 });
-                // var swiper5 = new Swiper(ele.slideContact, {
-                //     slidesPerView: 1,
-                //     spaceBetween: 30,
-                //     // autoplay: {
-                //     //     delay: 3000,
-                //     // },
-                //     navigation: {
-                //         nextEl: '.swiper-button-next',
-                //         prevEl: '.swiper-button-prev',
-                //     },
-                //     // pagination: {
-                //     //     el: '.swiper-pagination',
-                //     //     clickable: true,
-                //     // },
-                //     breakpoints: {
-                //         1200: {
-                //             slidesPerView: 3,
-                //             spaceBetween: 30,
-                //         },
-                //         991: {
-                //             slidesPerView: 2,
-                //             spaceBetween: 30,
-
-                //         },
-                //         767: {
-                //             slidesPerView: 1,
-                //             spaceBetween: 30,
-                //         },
-                //         320: {
-                //             slidesPerView: 1,
-                //             spaceBetween: 10,
-                //         }
-                //     }
-                // });
-                var swiper6 = new Swiper(ele.slideTreatment, {
-                    slidesPerView: 3,
-                    spaceBetween: 100,
-                    effect: 'coverflow',
-                    Centeredslides: true, // set the slide to center
-                    coverflowEffect: {
-                        rotate: 0, // Slide rotate in degrees
-                        stretch: 0, // Stretch space between slides (in px)
-                        depth: 100, // Depth offset in px (slides translate in Z axis)
-                        modifier: 1, // Effect multipler
-                        slideShadows : false, // Enables slides shadows
-                      },
+                var swiper5 = new Swiper(ele.slideTeacher, {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                     // autoplay: {
                     //     delay: 3000,
                     // },
@@ -219,17 +175,17 @@
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     },
-                    // pagination: {
-                    //     el: '.swiper-pagination',
-                    //     clickable: true,
-                    // },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
                     breakpoints: {
                         1200: {
                             slidesPerView: 3,
                             spaceBetween: 30,
                         },
                         991: {
-                            slidesPerView: 1,
+                            slidesPerView: 2,
                             spaceBetween: 30,
 
                         },
@@ -243,6 +199,7 @@
                         }
                     }
                 });
+               
                 var swiper7 = new Swiper(ele.slideSk, {
                     slidesPerView: 3,
                     spaceBetween: 30,

@@ -2,8 +2,9 @@
     .section-course {
         .content-course-wrapper {
             display: grid;
-            grid-template-columns: 38% 58%;
-            grid-gap: 2%;
+            grid-template-columns: 39% 58%;
+            grid-gap: 3%;
+            padding: 20px;
             .left-course {
                 img {
                     width: 100%;
@@ -17,14 +18,27 @@
                     img {
                         width: 100%;
                     }
+                    .head-title{
+                        h5{
+                            padding-top: 20px;
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
+        }
+        .swiper-course{
+            margin: 40px;
+            background-color: white;
+           
         }
     }
 }
 
 // =========================pre-certificate======================
 .certificate-wrapper {
+    padding: 5% 0;
+    background-color: white;
     .nav-tabs .nav-item.show .nav-link,
     .nav-tabs .nav-link.active {
         color: $main-color;
@@ -75,11 +89,20 @@
             flex-wrap: wrap;
             img {
                 width: 100%;
+                padding-bottom: 20px;
             }
             .certi-item {
                 padding: 15px;
                 background-color: #F6F6F6;
                 border: 1px solid $main-color;
+                .name-certi{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                .price-certi{
+                    color: $main-color;
+                    font-weight: bold;
+                }
                 .btn-ctn {
                     display: flex;
                     justify-content: space-between;
@@ -89,7 +112,12 @@
         }
         .watch-more-cnt {
             right: 0;
-            color: $main-color;
+            a{
+                color: $main-color;
+                float: right;
+                margin: 15px 0;
+                font-size: 1.4rem;
+            }
         }
         .certi-ctn {}
         .agency-ctn {}
@@ -97,3 +125,231 @@
 }
 
 // ===========================reason==============================
+.reason-wrapper{
+
+    padding: 5% 0;
+    .reason-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        margin-bottom: 25px;
+        img{
+            padding-right: 20px;
+        }
+        .item-content{
+            .right-reason-ctn{
+                padding: 20px;
+                .reason-title{
+                    h5{
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+                    
+                }
+                .watch-more-cnt{
+                    a{
+                        right: 0;
+                        float: right;
+                        color: $main-color;
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+// =======================Customer================================
+.customer-wrapper{
+    padding: 5% 0;
+    background-color: white;
+    .customer-content{
+        padding: 10% 0;
+        margin-bottom: 10%;
+        text-align: center;
+        img{
+            width: 130px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        .customer-name{
+            h5{
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        .customer-cmt{
+            p{
+                position: relative;
+            }
+        }
+    }
+}
+// =========================Teacher============================
+.teacher-wrapper{
+    padding: 5% 0;
+    background-color: #F6F6F6;
+    .teacher-item{
+        padding: 10% 0px;
+        background-color: white;
+        margin: 6% 0;
+        padding: 15px;
+        border: 1px solid $main-color;
+        border-radius: 20px;
+        img{
+            width: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        .top-part{
+            display: flex;
+            // justify-content: space-around;
+            flex-direction: row;
+            .right-top-part{
+                display: block;
+                width: 100%;
+                .right-top{
+                    width: 100%;
+                    border-bottom: 2px solid $main-color;
+                    height: 75px;
+                    .teacher-name{
+                        padding-left: 20px;
+                    }
+                }
+                .right-bottom{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    padding-left: 20px;
+                    .rate-star{
+                        #half-stars{
+                            /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+                            .rating-group {
+                              display: inline-flex;
+                            }
+                            
+                            /* make hover effect work properly in IE */
+                            .rating__icon {
+                              pointer-events: none;
+                            }
+                            
+                            /* hide radio inputs */
+                            .rating__input {
+                             position: absolute !important;
+                             left: -9999px !important;
+                            }
+                          
+                            /* set icon padding and size */
+                            .rating__label {
+                              cursor: pointer;
+                              /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+                              padding: 0 0.1em;
+                              font-size: 1.3rem;
+                            }
+                          
+                            /* add padding and positioning to half star labels */
+                            .rating__label--half {
+                              padding-right: 0;
+                              margin-right: -0.6em;
+                              z-index: 2;
+                            }
+                            
+                            /* set default star color */
+                            .rating__icon--star {
+                              color: orange;
+                            }
+                            
+                            /* set color of none icon when unchecked */
+                            .rating__icon--none {
+                              color: #eee;
+                            }
+                          
+                            /* if none icon is checked, make it red */
+                            .rating__input--none:checked + .rating__label .rating__icon--none {
+                              color: red;
+                            }
+                          
+                            /* if any input is checked, make its following siblings grey */
+                            .rating__input:checked ~ .rating__label .rating__icon--star {
+                              color: #ddd;
+                            }
+                            
+                            /* make all stars orange on rating group hover */
+                            .rating-group:hover .rating__label .rating__icon--star,
+                            .rating-group:hover .rating__label--half .rating__icon--star {
+                              color: orange;
+                            }
+                          
+                            /* make hovered input's following siblings grey on hover */
+                            .rating__input:hover ~ .rating__label .rating__icon--star,
+                            .rating__input:hover ~ .rating__label--half .rating__icon--star {
+                              color: #ddd;
+                            }
+                            
+                            /* make none icon grey on rating group hover */
+                            .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+                               color: #eee;
+                            }
+                          
+                            /* make none icon red on hover */
+                            .rating__input--none:hover + .rating__label .rating__icon--none {
+                              color: red;
+                            }
+                          }
+                          
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// ======================News==================================
+.news-wrapper{
+    padding: 5% 0;
+    .news-container{
+        display: flex;
+        .new-item{
+            img{
+                border: 1px solid $main-color;
+            }
+            .item-ctn{
+                padding: 15px;
+                background-color: white ;
+                border-right: 1px solid $main-color;
+                border-left: 1px solid $main-color;
+                border-bottom: 1px solid $main-color;
+                
+                .new-title{
+                    h5{
+                        font-weight: bold;
+                        padding-bottom: 5px;
+                    }
+                }
+                .new-date{
+                    padding: 10px 0;
+                    i{
+                        color: $main-color;
+                    }
+                    a{
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+
+    }
+    .watch-more-news{
+        text-align: center;
+        margin: 20px 0;
+    }
+}

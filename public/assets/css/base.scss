@@ -700,15 +700,12 @@ textarea::-ms-input-placeholder {
         color: $main-color;
         position: relative;
         &::before {
-            content: "";
+            content: '';
             position: absolute;
-            background: url("../images/back-title.png") no-repeat;
-            width: 55px;
-            height: 60px;
-            left: -25%;
-            top: -20%;
-            right: 0;
-            margin: auto;
+            transform: translate(-65%, -10%);
+            width: 100px;
+            height: 100px;
+            background: url(../images/back-title.png) no-repeat;
         }
     }
     h5 {

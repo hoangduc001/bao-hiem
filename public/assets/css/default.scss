@@ -13,8 +13,61 @@ $ellipsiswidth: 3em !default;
 
 
 // Navbar
-
-
+//=============================swipper arrow==================================
+.swiper-button-prev {
+    transform: translate(-46%, 10px);
+    top: -15%;
+    bottom: 0;
+    margin: auto;
+    background-image: url('../images/home/arrow-left-active.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.swiper-button-next {
+    background-image: url('../images/home/arrow-right-active.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(48%, 10px);
+    top: -15%;
+    bottom: 0;
+    margin: auto;
+}
+// ============================ellipsis=======================================
+.ellipsis {
+    overflow: hidden;
+    text-align: center;
+    height: $height;
+    line-height: $lineheight;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+.ellipsis:before {
+    content: "";
+    float: left;
+    width: 5px;
+    height: $height;
+}
+.ellipsis>*:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -5px;
+}
+.ellipsis:after {
+    content: "";
+    float: right;
+    position: initial;
+    top: -$lineheight;
+    left: 100%;
+    width: $ellipsiswidth;
+    margin-left: -$ellipsiswidth;
+    padding-right: 5px;
+    text-align: right;
+    background: white;
+    color: #f36f21;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white)
+}
 
 footer {
     background-color: $main-color;
@@ -291,43 +344,4 @@ footer {
     display: none;
     z-index: 1024;
     cursor: pointer;
-}
-// ============================ellipsis=======================================
-.ellipsis {
-    overflow: hidden;
-    text-align: left;
-    height: $height;
-    line-height: $lineheight;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    margin-bottom: 0;
-}
-.ellipsis:before {
-    content: "";
-    float: left;
-    width: 5px;
-    height: $height;
-}
-.ellipsis>*:first-child {
-    float: right;
-    width: 100%;
-    margin-left: -5px;
-}
-.ellipsis:after {
-    content: "";
-    float: right;
-    position: initial;
-    top: -$lineheight;
-    left: 100%;
-    width: $ellipsiswidth;
-    margin-left: -$ellipsiswidth;
-    padding-right: 5px;
-    text-align: right;
-    background: white;
-    color: #f36f21;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white)
-}
-.thumb-t{
-    color: $main-color;
 }

@@ -8,6 +8,68 @@
   z-index: 999;
 }
 
+.swiper-button-prev {
+  -webkit-transform: translate(-46%, 10px);
+          transform: translate(-46%, 10px);
+  top: -15%;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../images/home/arrow-left-active.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next {
+  background-image: url("../images/home/arrow-right-active.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(48%, 10px);
+          transform: translate(48%, 10px);
+  top: -15%;
+  bottom: 0;
+  margin: auto;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-align: center;
+  height: 60px;
+  line-height: 20px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+
+.ellipsis:before {
+  content: "";
+  float: left;
+  width: 5px;
+  height: 60px;
+}
+
+.ellipsis > *:first-child {
+  float: right;
+  width: 100%;
+  margin-left: -5px;
+}
+
+.ellipsis:after {
+  content: "";
+  float: right;
+  position: initial;
+  top: -20px;
+  left: 100%;
+  width: 3em;
+  margin-left: -3em;
+  padding-right: 5px;
+  text-align: right;
+  background: white;
+  color: #f36f21;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, white), to(white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+}
+
 footer {
   background-color: #0d723b;
   padding: 0;
@@ -317,49 +379,5 @@ footer .footer-ctn .footer-nav li a {
   display: none;
   z-index: 1024;
   cursor: pointer;
-}
-
-.ellipsis {
-  overflow: hidden;
-  text-align: left;
-  height: 60px;
-  line-height: 20px;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  margin-bottom: 0;
-}
-
-.ellipsis:before {
-  content: "";
-  float: left;
-  width: 5px;
-  height: 60px;
-}
-
-.ellipsis > *:first-child {
-  float: right;
-  width: 100%;
-  margin-left: -5px;
-}
-
-.ellipsis:after {
-  content: "";
-  float: right;
-  position: initial;
-  top: -20px;
-  left: 100%;
-  width: 3em;
-  margin-left: -3em;
-  padding-right: 5px;
-  text-align: right;
-  background: white;
-  color: #f36f21;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, white), to(white));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
-}
-
-.thumb-t {
-  color: #0d723b;
 }
 /*# sourceMappingURL=default.css.map */
