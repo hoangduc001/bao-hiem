@@ -41,7 +41,115 @@
 <body class="">
 <!-- Menu -->
 {{--sticky-top--}}
+<div id="menu-main" class="block-main-menu">
+    <!--  -->
+        <!-- Menu -->
+        <div class="logo-mobile-nav d-lg-none">
+            <a href="{{ url('/') }}">
+                <img class="img-fluid" src="{{ url('/') }}/assets/images/home/logo.png?{{ config('custom.version') }}" alt="">
+            </a>
+        </div>
+        <div class="navbar-top bg-grey fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="navbar-callus text-left sm-text-center">
+                            <ul class="list-inline">
+                                <li><a href=""><i class="fa fa-phone"></i> Hotlines: 1234 5678 90</a></li>
+                                <li><a href=""><i class="fa fa-envelope-o"></i> Contact us: your@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <div class="right-sub">
+                            <div class="navbar-socail text-right sm-text-center">
+                                <div class="attr-nav">
+                                    <ul>
+                                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            <div class="user-action">
+                                <div class="sign-inup">
+                                    <a href="" class="btn btn-default sign ">Đăng nhập</a>
+                                    <a href="" class="btn btn-default sign ">Đăng kí</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Start Top Search -->
+        <div class="top-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- End Top Search -->
+        
+    <nav id="sidenav" class="main-menu navbar navbar-expand-lg ">
+        <div id="logo-mobile" class="logo-main mb-3 mt-4">
+            <a href="{{ url('/') }}">
+                <img class="img-fluid" src="{{ url('/') }}/assets/images/home/logo.png?{{ config('custom.version') }}" alt="">
+            </a>
+        </div>
+        <div class="w-100 dual-collapse2 order-1 order-md-0">
+            <ul class="left-nav navbar-nav ml-auto text-center">
+                <li @if(request()->is('/')) class="active" @endif >
+                    <a class="nav-link" href="{{ url('/') }}">Trang chủ</a>
+                </li>
+                <li @if(request()->is('/intro')) class="active" @endif>
+                    <a class="nav-link" href="{{ url('/intro') }}">Về chúng tôi</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="#">Khóa học </a>
+                    <ul class="menu-hover">
+                        <li @if(request()->is('pages/car')) class="active" @endif><a class="nav-link" href="{{ url('/car') }}">So sánh bảo hiểm vật chất ô tô</a></li>
+                        <li @if(request()->is('pages/health')) class="active" @endif><a class="nav-link" href="{{ url('/health') }}">So sánh bảo hiểm sức khỏe</a></li>
+                        <li @if(request()->is('pages/longevity')) class="active" @endif><a class="nav-link" href="{{ url('/longevity') }}">So sánh bảo hiểm nhân thọ</a></li>
+                    
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/treatment') }}">Luyện thi chứng chỉ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/question') }}">Lịch thi chứng chỉ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/contact') }}">Giáo viên</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/contact') }}">Trung tâm trợ giúp</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /.Menu -->
+    <!-- overlay -->
+    <div class="block-overlay"></div>
+    <!-- /.overlay -->
+
+    <!-- icon bar -->
+    <div class="open-sidemenu">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+    </div>
+    <!-- /.icon bar -->
+</div>
 <!-- Menu -->
 <div class="body-page">
     <div class="page-wrapper">
@@ -128,7 +236,21 @@
 
     @yield('footer')
     <script src="{{ url('assets/lib/jqueryModal/js/jquery.modal.min.js?'.config('custom.version')) }}"></script>
-
+<script>
+    // ------------------------------------------------------------------------------ //
+            // Toggle Search
+            // ------------------------------------------------------------------------------ //
+            $(" .attr-nav").each(function(){  
+                $("li.search > a", this).on("click", function(e){
+                    e.preventDefault();
+                    $(".top-search").slideToggle();
+                });
+            });
+            $(".input-group-addon.close-search").on("click", function(){
+                $(".top-search").slideUp();
+            });
+            
+</script>
     <script>
         $(document).ready(function(){
             // $.ui.menu.init();

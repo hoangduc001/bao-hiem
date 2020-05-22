@@ -199,7 +199,7 @@
                         }
                     }
                 });
-               
+
                 var swiper7 = new Swiper(ele.slideSk, {
                     slidesPerView: 3,
                     spaceBetween: 30,
@@ -400,7 +400,7 @@
             }, "slow");
         });
         //===============end scroll brand car page=====================
-// =====================scroll health page==================
+        // =====================scroll health page==================
         // duration of scroll animation
         var scrollDuration = 300;
         // paddles
@@ -478,7 +478,7 @@
             }, "slow");
         });
         //===============end scroll health page=====================
-        
+
         // fold table 
         $(".fold-table tr.view").on("click", function() {
             $(this).toggleClass("open").next(".fold").toggleClass("open");
@@ -488,76 +488,76 @@
         // -----------------seclect brand in health---------------
         $(".custom-select-fix").each(function() {
             var classes = $(this).attr("class"),
-            id      = $(this).attr("id"),
-            name    = $(this).attr("name");
-            var template =  '<div class="' + classes + '">';
+                id = $(this).attr("id"),
+                name = $(this).attr("name");
+            var template = '<div class="' + classes + '">';
             template += '<span class="custom-select-fix-trigger" >' + $(this).attr("placeholder") + '</span>';
             template += '<div class="custom-options">';
             $(this).find("option").each(function() {
                 template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
             });
             template += '</div></div>';
-            
+
             $(this).wrap('<div class="custom-select-fix-wrapper"></div>');
             $(this).hide();
             $(this).after(template);
-          });
-          $(".custom-option:first-of-type").hover(function() {
+        });
+        $(".custom-option:first-of-type").hover(function() {
             $(this).parents(".custom-options").addClass("option-hover");
-          }, function() {
+        }, function() {
             $(this).parents(".custom-options").removeClass("option-hover");
-          });
-          $(".custom-select-fix-trigger").on("click", function() {
+        });
+        $(".custom-select-fix-trigger").on("click", function() {
 
             // $('html').one('click',function() {
             //   $(".custom-select-fix").removeClass("opened");
             // });
             $(this).parents(".custom-select-fix").toggleClass("opened");
             event.stopPropagation();
-          });
-          $(".custom-option").on("click", function() {
+        });
+        $(".custom-option").on("click", function() {
             $(this).parents(".custom-select-fix-wrapper").find("select").val($(this).data("value"));
             $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
             $(this).addClass("selection");
             $(this).parents(".custom-select-fix").removeClass("opened");
             $(this).parents(".custom-select-fix").find(".custom-select-fix-trigger").text($(this).text());
-          });
+        });
         //   ----------select in logevity-------------
-          $(".select-gray").each(function() {
+        $(".select-gray").each(function() {
             var classes = $(this).attr("class"),
-            id      = $(this).attr("id"),
-            name    = $(this).attr("name");
-            var template =  '<div class="' + classes + '">';
+                id = $(this).attr("id"),
+                name = $(this).attr("name");
+            var template = '<div class="' + classes + '">';
             template += '<span class="select-gray-trigger">' + $(this).attr("placeholder") + '</span>';
             template += '<div class="custom-options">';
             $(this).find("option").each(function() {
                 template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
             });
             template += '</div></div>';
-            
+
             $(this).wrap('<div class="select-gray-wrapper"></div>');
             $(this).hide();
             $(this).after(template);
-          });
-          $(".custom-option:first-of-type").hover(function() {
+        });
+        $(".custom-option:first-of-type").hover(function() {
             $(this).parents(".custom-options").addClass("option-hover");
-          }, function() {
+        }, function() {
             $(this).parents(".custom-options").removeClass("option-hover");
-          });
-          $(".select-gray-trigger").on("click", function() {
-            $('html').one('click',function() {
-              $(".select-gray").removeClass("opened");
+        });
+        $(".select-gray-trigger").on("click", function() {
+            $('html').one('click', function() {
+                $(".select-gray").removeClass("opened");
             });
             $(this).parents(".select-gray").toggleClass("opened");
             event.stopPropagation();
-          });
-          $(".custom-option").on("click", function() {
+        });
+        $(".custom-option").on("click", function() {
             $(this).parents(".select-gray-wrapper").find("select").val($(this).data("value"));
             $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
             $(this).addClass("selection");
             $(this).parents(".select-gray").removeClass("opened");
             $(this).parents(".select-gray").find(".select-gray-trigger").text($(this).text());
-          });
+        });
         // ========================end health dropdown======================
         // =======================select dropdown=========================
         $('.dropdown2 > .caption').on('click', function() {
