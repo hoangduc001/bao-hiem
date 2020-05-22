@@ -41,76 +41,7 @@
 <body class="">
 <!-- Menu -->
 {{--sticky-top--}}
-<div id="menu-main" class="block-main-menu">
-    
-        <!-- Menu -->
-        <div class="logo-mobile-nav d-lg-none">
-            <a href="{{ url('/') }}">
-                <img class="img-fluid" src="{{ url('/') }}/assets/images/default/logo.png?{{ config('custom.version') }}" alt="">
-            </a>
-        </div>
-            <nav id="sidenav" class="main-menu navbar navbar-expand-lg ">
-                <div id="logo-mobile" class="d-lg-none mb-3 mt-4">
-                    <a href="{{ url('/') }}">
-                        <img class="img-fluid" src="{{ url('/') }}/assets/images/default/logo.png?{{ config('custom.version') }}" alt="">
-                    </a>
-                </div>
-                <div class=" d-flex w-100 dual-collapse2 order-1 order-md-0">
-                    <ul class="left-nav navbar-nav ml-auto text-center">
-                        <li @if(request()->is('/')) class="active" @endif >
-                            <a class="nav-link" href="{{ url('/') }}">TRANG CHỦ </a>
-                        </li>
-                        <li @if(request()->is('/intro')) class="active" @endif>
-                            <a class="nav-link" href="{{ url('/intro') }}">GIỚI THIỆU</a>
-                        </li>
-                        <li >
-                            <a class="nav-link" href="#">SO SÁNH</a>
-                            <ul class="menu-hover">
-                                <li @if(request()->is('pages/car')) class="active" @endif><a class="nav-link" href="{{ url('/car') }}">So sánh bảo hiểm vật chất ô tô</a></li>
-                                <li @if(request()->is('pages/health')) class="active" @endif><a class="nav-link" href="{{ url('/health') }}">So sánh bảo hiểm sức khỏe</a></li>
-                                <li @if(request()->is('pages/longevity')) class="active" @endif><a class="nav-link" href="{{ url('/longevity') }}">So sánh bảo hiểm nhân thọ</a></li>
-                            
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-                    <a class="mx-auto" href="#">
-                        <img src="{{ url('/') }}/assets/images/default/logo.png?{{ config('custom.version') }}" class="logo-desktop">
-                    </a>
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> -->
-                </div>
-                <div class=" d-flex w-100 dual-collapse2 order-2 order-md-2">
-                    <ul class="right-nav navbar-nav mr-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/treatment') }}">ƯU ĐÃI</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/question') }}">KIẾN THỨC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/contact') }}">KẾT NỐI ỨNG VIÊN</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        <!-- /.Menu -->
 
-        <!-- overlay -->
-        <div class="block-overlay"></div>
-        <!-- /.overlay -->
-
-        <!-- icon bar -->
-        <div class="open-sidemenu">
-            <div class="icon-bar"></div>
-            <div class="icon-bar"></div>
-            <div class="icon-bar"></div>
-        </div>
-        <!-- /.icon bar -->
-    
-</div>
 <!-- Menu -->
 <div class="body-page">
     <div class="page-wrapper">
@@ -132,60 +63,60 @@
                     <div class="footer-content">
                         <ul class="footer-nav">
                             <li>
-                                <img src="{{ url('assets/images/default/phone.png?'.config('custom.version')) }}" alt="">
                                 MST : 0108560536</span>
                             </li>
                             
                             <li>
-                                <img src="{{ url('assets/images/default/address.png?'.config('custom.version')) }}" alt="">
                                 Phòng 520, toà nhà 142 Lê Duẩn, Khâm Thiên, Đống Đa, Hà Nội
                             </li>
                             <li>
-                                <img src="{{ url('assets/images/default/phone.png?'.config('custom.version')) }}" alt="">
-                                <a href="tel:0906060784">0906.060.784</a><span> | <a href="tel:0383590784">0383.590.784</a></span>
+                                Hotline <a href="tel:0906060784">0906.060.784</a><span> | <a href="tel:0383590784">0383.590.784</a></span>
                             </li>
-                            <li>
-                                <img src="{{ url('assets/images/default/mail.png?'.config('custom.version')) }}" alt="">
-                                <a href="mailto:contact@vics-corp.com">contact@vics-corp.com</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mt-5">
-                    <div class="foot-title">
-                        <h5>Liên hệ với chúng tôi</h5>
+                    <div class="foot-title second-part-title">
+                        <h5>Về Vics Corp</h5>
                     </div>
                     <div class="footer-content">
                         <ul class="footer-nav">
                             <li>
-                                <img src="{{ url('assets/images/default/phone.png?'.config('custom.version')) }}" alt="">
-                                <a href="tel:0906060784">0906.060.784</a><span> | <a href="tel:0383590784">0383.590.784</a></span>
+                                <a href="#">Điều khoản sử dụng</a>
                             </li>
                             <li>
-                                <img src="{{ url('assets/images/default/address.png?'.config('custom.version')) }}" alt="">
-                                Phòng 520, toà nhà 142 Lê Duẩn, Khâm Thiên, Đống Đa, Hà Nội
+                                <a href="#">Quy chế hoạt động</a>
                             </li>
                             <li>
-                                <img src="{{ url('assets/images/default/mail.png?'.config('custom.version')) }}" alt="">
-                                <a href="mailto:contact@vics-corp.com">contact@vics-corp.com</a>
+                                <a href="#">Chính sách bảo mật </a>
                             </li>
+                            <li>
+                                <a href="#">Trung tâm chăm sóc khách hàng </a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách hoàn tiền</a>
+                            </li>
+                            <ul class="ft-social">
+                                <li><a href="" target="_blank"><img src="{{ url('assets/images/home/fb.png?'.config('custom.version')) }}" alt=""></a></li>
+                                <li><a href="" target="_blank"><img src="{{ url('assets/images/home/insta.png?'.config('custom.version')) }}" alt=""></a></li>
+                                <li><a href="" target="_blank"><img src="{{ url('assets/images/home/twitter.png?'.config('custom.version')) }}" alt=""></a></li>
+                            </ul>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mt-5 footer-text-right">
-                    <div class="foot-title">
-                        <h5>Khác</h5>
+                    <div class="foot-slogan">
+                        <img src="{{ url('assets/images/home/logo.png?'.config('custom.version')) }}" alt="">
+                        <div class="slogan">
+                            Tải ngay App Vics corp Học tốt hơn - thoải mái hơn
+                        </div>
                     </div>
                     <div class="footer-content">
-                        <ul class="footer-nav">
-                            <li>
-                               Tin tức
-                            </li>
-                            <li>
-                                Phản hồi khách hàng
-                            </li>
-
-                        </ul>
+                        <div class="app-download">
+                            <a href="#"><img src="{{ url('assets/images/home/ch-play1.png?'.config('custom.version')) }}" alt=""></a>
+                            <a href="#"><img src="{{ url('assets/images/home/app-store.png?'.config('custom.version')) }}" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
