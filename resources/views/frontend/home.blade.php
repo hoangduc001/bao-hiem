@@ -30,12 +30,21 @@
                                 <div class="content-course-wrapper">
                                     <div class="left-course">
                                         <div class="left-side">
-                                            <img src="{{ url('/') }}/assets/images/left-demo.png?{{ config('custom.version') }}" alt="">
-                                            <div class="left-side-title">
-                                                <h3 class="text-uppercase">
-                                                Khóa học phụ trợ bảo hiểm
-                                                </h3>
-                                                <h6>Nguyễn Văn A</h6>
+                                            <div class="left-course-item xs-m-top-30">
+                                                <div class="course-img-ctn">
+                                                    <img src="{{ url('/') }}/assets/images/left-demo.png?{{ config('custom.version') }}" alt="">
+                                                    <div class="course_overlay text-center">
+                                                        <div class="favorite-btn">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="left-side-title">
+                                                    <h3 class="text-uppercase">
+                                                    Khóa học phụ trợ bảo hiểm
+                                                    </h3>
+                                                    <h6>Nguyễn Văn A</h6>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

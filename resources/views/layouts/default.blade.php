@@ -49,7 +49,7 @@
                 <img class="img-fluid" src="{{ url('/') }}/assets/images/home/logo.png?{{ config('custom.version') }}" alt="">
             </a>
         </div>
-        <div class="navbar-top bg-grey fix">
+        <div class="navbar-top fix">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -98,45 +98,54 @@
             </div>
         </div>
         <!-- End Top Search -->
-        
-    <nav id="sidenav" class="main-menu navbar navbar-expand-lg ">
-        <div id="logo-mobile" class="logo-main mb-3 mt-4">
-            <a href="{{ url('/') }}">
-                <img class="img-fluid" src="{{ url('/') }}/assets/images/home/logo.png?{{ config('custom.version') }}" alt="">
-            </a>
+        <!-- main-menu -->
+        <div class="main-menu-ctn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav id="sidenav" class="main-menu navbar navbar-expand-md ">
+                            
+                            <div id="logo-mobile" class="logo-main mb-3 mt-4">
+                                <a href="{{ url('/') }}">
+                                    <img class="img-fluid" src="{{ url('/') }}/assets/images/home/logo.png?{{ config('custom.version') }}" alt="">
+                                </a>
+                            </div>
+                            <div class="w-100 dual-collapse2 order-1 order-md-0">
+                                <ul class="left-nav navbar-nav ml-auto text-center">
+                                    <li @if(request()->is('/')) class="active" @endif >
+                                        <a class="nav-link" href="{{ url('/') }}">Trang chủ</a>
+                                    </li>
+                                    <li @if(request()->is('/intro')) class="active" @endif>
+                                        <a class="nav-link" href="{{ url('/intro') }}">Về chúng tôi</a>
+                                    </li>
+                                    <li >
+                                        <a class="nav-link" href="#">Khóa học </a>
+                                        <ul class="menu-hover">
+                                            <li @if(request()->is('pages/car')) class="active" @endif><a class="nav-link" href="{{ url('/car') }}">So sánh bảo hiểm vật chất ô tô</a></li>
+                                            <li @if(request()->is('pages/health')) class="active" @endif><a class="nav-link" href="{{ url('/health') }}">So sánh bảo hiểm sức khỏe</a></li>
+                                            <li @if(request()->is('pages/longevity')) class="active" @endif><a class="nav-link" href="{{ url('/longevity') }}">So sánh bảo hiểm nhân thọ</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url('/treatment') }}">Luyện thi chứng chỉ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url('/question') }}">Lịch thi chứng chỉ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url('/contact') }}">Giáo viên</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url('/contact') }}">Trung tâm trợ giúp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="w-100 dual-collapse2 order-1 order-md-0">
-            <ul class="left-nav navbar-nav ml-auto text-center">
-                <li @if(request()->is('/')) class="active" @endif >
-                    <a class="nav-link" href="{{ url('/') }}">Trang chủ</a>
-                </li>
-                <li @if(request()->is('/intro')) class="active" @endif>
-                    <a class="nav-link" href="{{ url('/intro') }}">Về chúng tôi</a>
-                </li>
-                <li >
-                    <a class="nav-link" href="#">Khóa học </a>
-                    <ul class="menu-hover">
-                        <li @if(request()->is('pages/car')) class="active" @endif><a class="nav-link" href="{{ url('/car') }}">So sánh bảo hiểm vật chất ô tô</a></li>
-                        <li @if(request()->is('pages/health')) class="active" @endif><a class="nav-link" href="{{ url('/health') }}">So sánh bảo hiểm sức khỏe</a></li>
-                        <li @if(request()->is('pages/longevity')) class="active" @endif><a class="nav-link" href="{{ url('/longevity') }}">So sánh bảo hiểm nhân thọ</a></li>
-                    
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/treatment') }}">Luyện thi chứng chỉ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/question') }}">Lịch thi chứng chỉ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/contact') }}">Giáo viên</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/contact') }}">Trung tâm trợ giúp</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <!-- /.Menu -->
     <!-- overlay -->
     <div class="block-overlay"></div>

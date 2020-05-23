@@ -106,7 +106,11 @@ Nav Menu style
 .top-search .input-group-addon.close-search {
     cursor: pointer;
 }
-
+.main-menu-ctn{
+    @media (min-width: 992px) {
+    border-bottom: 3px solid $main-color;
+    }
+}
 .block-main-menu {
     // position: fixed;
     top: 0;
@@ -125,12 +129,12 @@ Nav Menu style
     //background-image: linear-gradient( rgba(0, 0, 0, 0.5), transparent);
     .logo-mobile-nav {
         position: relative;
-        max-width: 70px;
+        max-width: 100px;
         z-index: 2;
     }
     @media (min-width: 992px) {
         .navbar {
-            height: 65px;
+            height: 80px;
         }
         .logo-desktop {
             transform: translate(10%, 22%);
@@ -146,12 +150,15 @@ Nav Menu style
     .main-menu {
         display: flex;
         align-items: center;
-        border-bottom: 3px solid $main-color;
         .logo-main {
-            transform: translateY(25%);
             z-index: 9;
-            img {
-                width: 120px;
+           transform: translate(10%, 25%);
+           -webkit-transform: translate(10%, 25%);
+           -moz-transform: translate(10%, 25%);
+           -ms-transform: translate(10%, 25%);
+           -o-transform: translate(10%, 25%);
+           img{
+                width: 130px;
             }
         }
         .left-nav {
@@ -163,10 +170,12 @@ Nav Menu style
         ul {
             margin: 0;
             padding: 0;
+            right: 0;
+            float: right;
             list-style: none;
-            display: flex;
+            // display: flex;
             margin-top: -8px;
-            justify-content: space-between;
+            // justify-content: space-between;
             li {
                 margin-left: 5px;
                 position: relative;
@@ -402,6 +411,28 @@ Nav Menu style
 }
 
 //=============================swipper arrow==================================
+.swiper-button-prev {
+    transform: translate(-46%, 10px);
+    top: 20%;
+    bottom: 0;
+    margin: auto;
+    background-image: url('../images/home/arrow-left-active.png') !important;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+.swiper-button-next {
+    background-image: url('../images/home/arrow-right-active.png') !important;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    transform: translate(48%, 10px);
+    top: 20%;
+    bottom: 0;
+    margin: auto;
+}
 // ============================ellipsis=======================================
 .ellipsis {
     overflow: hidden;

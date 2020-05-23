@@ -134,9 +134,9 @@
                 var swiper4 = new Swiper(ele.slideCourse, {
                     slidesPerView: 1,
                     // spaceBetween: 30,
-                    autoplay: {
-                        delay: 5000,
-                    },
+                    // autoplay: {
+                    //     delay: 5000,
+                    // },
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
