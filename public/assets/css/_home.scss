@@ -5,61 +5,143 @@
             grid-template-columns: 39% 58%;
             grid-gap: 3%;
             padding: 20px;
-            .left-course {
-                .course-img-ctn{
-                    position: relative;
-                    overflow: hidden;
+            .course-img-ctn{
+                position: relative;
+                overflow: hidden;
+                .course_overlay{
+                    width:100%;
+                    height: 100%;
+                    background-color: rgba(1, 160, 128, 0.6);
+                    position: absolute;
+                    left:0;
+                    top:0;
+                    // padding-top: 35%;
+                    opacity: 0;
+                    transition: all 0.2s;
+                    .overlay-ctn{
+                        padding-top: 45%;
+                    }
+                    a{
+                        // width:40px;
+                        // height: 40px;
+                        // line-height: 40px;
+                        margin: 0 auto;
+                        color:$main-color;
+                        border:1px solid #fff;
+                        // border-radius: 50%;
+                        display: inline-block;
+                        font-size:1rem;
+                        bottom: -150px;
+                        position: relative;
+                        background-color: white;
+                    }
+                }
+                .course-price{
+                    font-size: 18px;
+                    color: #F4C150;
+                    font-family: HKNova-Bold;
+                }
+                &:hover{
                     .course_overlay{
-                        width:100%;
-                        height: 100%;
-                        background-color: rgba(1, 160, 128, 0.6);
-                        position: absolute;
-                        left:0;
-                        top:0;
-                        padding-top: 35%;
-                        opacity: 0;
-                        transition: all 0.2s;
+                        opacity: 1;
                         a{
-                            width:40px;
-                            height: 40px;
-                            line-height: 40px;
-                            margin: 0 auto;
-                            color:#fff;
-                            border:1px solid #fff;
-                            border-radius: 50%;
-                            display: inline-block;
-                            font-size:2rem;
-                            bottom: -150px;
-                            position: relative;
+                            bottom: -10px;
+                            
                         }
                     }
-                    &:hover{
-                        .course_overlay{
-                            opacity: 1;
-                            a{
-                                bottom: 0;
-                                
+                }
+                .course-rate{
+                    .rate-star #half-stars .rating__label{
+                        font-size: 2.3rem;
+                    }
+                    .all-rate-ctn{
+                        display: flex;
+                    }
+                }
+            }
+            .left-side-title{
+                margin: 15px 0;
+                h3{
+                    color: $main-color;
+                    font-size: 2rem;
+                }
+                h6{
+                    font-size: 1rem;
+                    font-family: HKNova-Regular;
+                }
+            }
+            .left-course {
+                
+                img {
+                    width: 100%;
+                }
+                .fa-heart-o, .fa-heart{
+                    font-size: 2.3rem;
+                }
+                .all-rate-ctn{
+                    display: flex;
+                    justify-content: space-around;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    .total-scrore-rate{
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        color: white;
+                        font-family: HKNova-Regular;
+                        strong{
+                            font-family: HKNova-Bold;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .course-total{
+                    color: #F4C150;
+                    font-family: HKNova-Bold;
+                    font-size: 1.7rem;
+                    padding-left: 25px;
+                    span.line-through{
+                        text-decoration: line-through;
+                        color: white;
+                        font-size: 1.2rem;
+                        font-family: HKNova-Regular;
+                    }
+                }
+                .buy-total{
+                    padding-left: 25px;
+                }
+                .course_overlay a{
+                    font-size: 1.3rem;
+                }
+            }
+            .right-course {
+                .right-course-ctn{
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    grid-gap: 20px;
+                    .course-item {
+                        img {
+                            width: 100%;
+                        }
+                        .head-title{
+                            h5{
+                                padding-top: 20px;
+                                font-weight: bold;
                             }
                         }
                     }
                 }
-                img {
-                    width: 100%;
-                }
-            }
-            .right-course {
-                display: grid;
-                grid-template-columns: auto auto auto;
-                grid-gap: 20px;
-                .course-item {
-                    img {
-                        width: 100%;
-                    }
-                    .head-title{
-                        h5{
-                            padding-top: 20px;
-                            font-weight: bold;
-                        }
+                .watch-more-cnt{
+                    right: 0;
+                    float: right;
+                    a{
+                        color: $main-color;
+                        float: right;
+                        margin: 15px 0;
+                        text-decoration: underline;
+                        font-size: 1rem;
+                        font-family: HKNova-Bold;
                     }
                 }
             }
@@ -144,6 +226,11 @@
                     display: flex;
                     justify-content: space-between;
                     flex-direction: row;
+                }
+                &:hover{
+                    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.41);
+                    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.41);
+                    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.41);
                 }
             }
         }
@@ -267,83 +354,12 @@
                     justify-content: space-between;
                     flex-direction: row;
                     padding-left: 20px;
-                    .rate-star{
-                        #half-stars{
-                            /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
-                            .rating-group {
-                              display: inline-flex;
-                            }
-                            
-                            /* make hover effect work properly in IE */
-                            .rating__icon {
-                              pointer-events: none;
-                            }
-                            
-                            /* hide radio inputs */
-                            .rating__input {
-                             position: absolute !important;
-                             left: -9999px !important;
-                            }
-                          
-                            /* set icon padding and size */
-                            .rating__label {
-                              cursor: pointer;
-                              /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
-                              padding: 0 0.1em;
-                              font-size: 1.3rem;
-                            }
-                          
-                            /* add padding and positioning to half star labels */
-                            .rating__label--half {
-                              padding-right: 0;
-                              margin-right: -0.6em;
-                              z-index: 2;
-                            }
-                            
-                            /* set default star color */
-                            .rating__icon--star {
-                              color: orange;
-                            }
-                            
-                            /* set color of none icon when unchecked */
-                            .rating__icon--none {
-                              color: #eee;
-                            }
-                          
-                            /* if none icon is checked, make it red */
-                            .rating__input--none:checked + .rating__label .rating__icon--none {
-                              color: red;
-                            }
-                          
-                            /* if any input is checked, make its following siblings grey */
-                            .rating__input:checked ~ .rating__label .rating__icon--star {
-                              color: #ddd;
-                            }
-                            
-                            /* make all stars orange on rating group hover */
-                            .rating-group:hover .rating__label .rating__icon--star,
-                            .rating-group:hover .rating__label--half .rating__icon--star {
-                              color: orange;
-                            }
-                          
-                            /* make hovered input's following siblings grey on hover */
-                            .rating__input:hover ~ .rating__label .rating__icon--star,
-                            .rating__input:hover ~ .rating__label--half .rating__icon--star {
-                              color: #ddd;
-                            }
-                            
-                            /* make none icon grey on rating group hover */
-                            .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
-                               color: #eee;
-                            }
-                          
-                            /* make none icon red on hover */
-                            .rating__input--none:hover + .rating__label .rating__icon--none {
-                              color: red;
-                            }
-                          }
-                          
-                    }
+                 .num-course{
+                     h4{
+                        font-size: 25px;
+                        font-weight: bold;
+                     }
+                 }
                 }
             }
         }

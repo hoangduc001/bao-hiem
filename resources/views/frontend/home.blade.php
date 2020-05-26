@@ -35,7 +35,44 @@
                                                     <img src="{{ url('/') }}/assets/images/left-demo.png?{{ config('custom.version') }}" alt="">
                                                     <div class="course_overlay text-center">
                                                         <div class="favorite-btn">
-                                                            
+                                                            <span class="heart" id="heart"><i class="fa fa-heart-o" aria-hidden="true" ></i> </span>
+                                                        </div>
+                                                        <div class="overlay-ctn text-left p-l-15">
+                                                            <div class="course-rate">
+                                                                <div class="rate-star all-rate-ctn">
+                                                                    <div id="half-stars">
+                                                                        <div class="rating-group">
+                                                                            <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                                                            <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                                                            <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                                            <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                                            <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                                            <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                                            <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                                                            <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                                            <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                                            <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                                                            <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                                            <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                                            <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="total-scrore-rate"><strong>4,5 </strong><span>(50.412)</span></div>
+                                                                </div>
+                                                               <div class="course-total"><span class="line-through">5.000.000</span> 3.500.000đ <span>đ</span></div>
+                                                               <div class="buy-total">
+                                                                    <a href="#" class="btn btn-default ">Mua khóa học</a>
+                                                               </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -49,23 +86,42 @@
                                         </div>
                                     </div>
                                     <div class="right-course">
-                                        @for($i=1;$i<=6;$i++)
-                                        <div class="course-item">
-                                            <img src="{{ url('/') }}/assets/images/item-demo.png?{{ config('custom.version') }}" alt="">
-                                            <div class="head-title text-center">
-                                                <h5>Loại hình 1</h5>
-                                            </div>
+                                        <div class="right-course-ctn">
+                                            @for($i=1;$i<=6;$i++)
+                                                <div class="course-item">
+                                                    <div class="course-img-ctn">
+                                                        <img src="{{ url('/') }}/assets/images/item-demo.png?{{ config('custom.version') }}" alt="">
+                                                        <div class="course_overlay text-center">
+                                                            <div class="favorite-btn">
+                                                                <span class="heart" id="heart"><i class="fa fa-heart-o" aria-hidden="true" ></i> </span>
+                                                            </div>
+                                                            <div class="overlay-ctn">
+                                                                <div class="course-price">
+                                                                    500.000 <span>đ</span>
+                                                                </div>
+                                                                <a href="" class="btn btn-default ">Mua khóa học</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="head-title text-center">
+                                                        <h5>Loại hình 1</h5>
+                                                    </div>
+                                                </div>
+                                            @endfor
                                         </div>
-                                        @endfor
+                                        <div class="watch-more-cnt ">
+                                            <a href="javascript:void()">Xem thêm</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             @endfor
                         </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        
                     </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -199,13 +255,14 @@
                                 </div>
                                 @endfor
                             </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-
+                            
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
                         </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
                     </div>
                 </div>
             </div>
@@ -289,13 +346,13 @@
                                 </div>
                                 @endfor
                             </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-
+                           
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
                         </div>
+                         <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>

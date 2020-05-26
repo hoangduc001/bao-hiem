@@ -133,7 +133,7 @@
                 });
                 var swiper4 = new Swiper(ele.slideCourse, {
                     slidesPerView: 1,
-                    // spaceBetween: 30,
+                    spaceBetween: 30,
                     // autoplay: {
                     //     delay: 5000,
                     // },
@@ -236,6 +236,16 @@
                 });
             });
         };
+        // ===============Heart-like========================
+        $(".heart").click(function(){
+            if($(".heart").hasClass("liked")){
+              $(".heart").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+              $(".heart").removeClass("liked");
+            }else{
+              $(".heart").html('<i class="fa fa-heart" aria-hidden="true"></i>');
+              $(".heart").addClass("liked");
+            }
+        });
         // ===============Dropdown check====================
         var CheckboxDropdown = function(el) {
             var _this = this;

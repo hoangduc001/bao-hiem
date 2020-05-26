@@ -433,16 +433,20 @@ Nav Menu style
 }
 
 .swiper-button-prev {
-  -webkit-transform: translate(-46%, 10px);
-          transform: translate(-46%, 10px);
-  top: 20%;
+  transform: translate(-48%, -5%);
+  top: 0;
   bottom: 0;
   margin: auto;
   background-image: url("../images/home/arrow-left-active.png") !important;
   background-size: contain;
   width: 40px;
   height: 40px;
+  left: -3%;
   background-repeat: no-repeat;
+  -webkit-transform: translate(-48%, -5%);
+  -moz-transform: translate(-48%, -5%);
+  -ms-transform: translate(-48%, -5%);
+  -o-transform: translate(-48%, -5%);
 }
 
 .swiper-button-next {
@@ -451,11 +455,15 @@ Nav Menu style
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
-  -webkit-transform: translate(48%, 10px);
-          transform: translate(48%, 10px);
-  top: 20%;
+  transform: translate(48%, 5%);
+  top: 0;
   bottom: 0;
+  right: -3%;
   margin: auto;
+  -webkit-transform: translate(48%, 5%);
+  -moz-transform: translate(48%, 5%);
+  -ms-transform: translate(48%, 5%);
+  -o-transform: translate(48%, 5%);
 }
 
 .ellipsis {
@@ -851,6 +859,102 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   display: none;
   z-index: 1024;
   cursor: pointer;
+}
+
+.fa-heart-o {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+  padding-right: 15px;
+  padding-top: 15px;
+  float: right;
+}
+
+.rate-star #half-stars {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* set icon padding and size */
+  /* add padding and positioning to half star labels */
+  /* set default star color */
+  /* set color of none icon when unchecked */
+  /* if none icon is checked, make it red */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+  /* make none icon grey on rating group hover */
+  /* make none icon red on hover */
+}
+
+.rate-star #half-stars .rating-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.rate-star #half-stars .rating__icon {
+  pointer-events: none;
+}
+
+.rate-star #half-stars .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.rate-star #half-stars .rating__label {
+  cursor: pointer;
+  /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+  padding: 0 0.1em;
+  font-size: 1.3rem;
+}
+
+.rate-star #half-stars .rating__label--half {
+  padding-right: 0;
+  margin-right: -0.6em;
+  z-index: 2;
+}
+
+.rate-star #half-stars .rating__icon--star {
+  color: orange;
+}
+
+.rate-star #half-stars .rating__icon--none {
+  color: #eee;
+}
+
+.rate-star #half-stars .rating__input--none:checked + .rating__label .rating__icon--none {
+  color: red;
+}
+
+.rate-star #half-stars .rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+.rate-star #half-stars .rating-group:hover .rating__label .rating__icon--star,
+.rate-star #half-stars .rating-group:hover .rating__label--half .rating__icon--star {
+  color: orange;
+}
+
+.rate-star #half-stars .rating__input:hover ~ .rating__label .rating__icon--star,
+.rate-star #half-stars .rating__input:hover ~ .rating__label--half .rating__icon--star {
+  color: #ddd;
+}
+
+.rate-star #half-stars .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+  color: #eee;
+}
+
+.rate-star #half-stars .rating__input--none:hover + .rating__label .rating__icon--none {
+  color: red;
 }
 
 .scrollup {
