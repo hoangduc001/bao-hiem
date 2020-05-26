@@ -14,7 +14,9 @@
 Route::get('/', function () {
     return view('frontend.home');
 });
-
+Route::get('/course-detail', function () {
+    return view('frontend.pages.course_detail');
+});
 Auth::routes();
 
 Route::get('/profile', 'UsersController@index')->name('profile');

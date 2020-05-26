@@ -5,118 +5,117 @@
             grid-template-columns: 39% 58%;
             grid-gap: 3%;
             padding: 20px;
-            .course-img-ctn{
+            .course-img-ctn {
                 position: relative;
                 overflow: hidden;
-                .course_overlay{
-                    width:100%;
+                .course_overlay {
+                    width: 100%;
                     height: 100%;
-                    background-color: rgba(1, 160, 128, 0.6);
+                    background-color: rgba(10, 111, 27, 0.6);
                     position: absolute;
-                    left:0;
-                    top:0;
+                    left: 0;
+                    top: 0;
                     // padding-top: 35%;
                     opacity: 0;
                     transition: all 0.2s;
-                    .overlay-ctn{
+                    .overlay-ctn {
                         padding-top: 45%;
                     }
-                    a{
+                    a {
                         // width:40px;
                         // height: 40px;
                         // line-height: 40px;
                         margin: 0 auto;
-                        color:$main-color;
-                        border:1px solid #fff;
+                        color: $main-color;
+                        border: 1px solid #fff;
                         // border-radius: 50%;
                         display: inline-block;
-                        font-size:1rem;
+                        font-size: 1rem;
                         bottom: -150px;
                         position: relative;
                         background-color: white;
                     }
                 }
-                .course-price{
+                .course-price {
                     font-size: 18px;
                     color: #F4C150;
                     font-family: HKNova-Bold;
                 }
-                &:hover{
-                    .course_overlay{
+                &:hover {
+                    .course_overlay {
                         opacity: 1;
-                        a{
+                        a {
                             bottom: -10px;
-                            
                         }
                     }
                 }
-                .course-rate{
-                    .rate-star #half-stars .rating__label{
+                .course-rate {
+                    .rate-star #half-stars .rating__label {
                         font-size: 2.3rem;
                     }
-                    .all-rate-ctn{
+                    .all-rate-ctn {
                         display: flex;
                     }
                 }
             }
-            .left-side-title{
+            .left-side-title {
                 margin: 15px 0;
-                h3{
+                h3 {
                     color: $main-color;
                     font-size: 2rem;
                 }
-                h6{
+                h6 {
                     font-size: 1rem;
                     font-family: HKNova-Regular;
                 }
             }
             .left-course {
-                
                 img {
                     width: 100%;
                 }
-                .fa-heart-o, .fa-heart{
+                .fa-heart-o,
+                .fa-heart {
                     font-size: 2.3rem;
                 }
-                .all-rate-ctn{
+                .all-rate-ctn {
                     display: flex;
                     justify-content: space-around;
                     top: 0;
                     bottom: 0;
                     margin: auto;
-                    .total-scrore-rate{
+                    .total-scrore-rate {
                         top: 0;
                         bottom: 0;
                         margin: auto;
                         color: white;
                         font-family: HKNova-Regular;
-                        strong{
+                        strong {
                             font-family: HKNova-Bold;
                             font-size: 1.5rem;
                         }
                     }
                 }
-                .course-total{
+                .course-total {
                     color: #F4C150;
                     font-family: HKNova-Bold;
                     font-size: 1.7rem;
                     padding-left: 25px;
-                    span.line-through{
+                    span.line-through {
                         text-decoration: line-through;
                         color: white;
                         font-size: 1.2rem;
                         font-family: HKNova-Regular;
                     }
                 }
-                .buy-total{
+                .buy-total {
                     padding-left: 25px;
                 }
-                .course_overlay a{
+                .course_overlay a {
                     font-size: 1.3rem;
                 }
             }
             .right-course {
-                .right-course-ctn{
+                .right-course-ctn {
                     display: grid;
                     grid-template-columns: auto auto auto;
                     grid-gap: 20px;
@@ -124,18 +123,18 @@
                         img {
                             width: 100%;
                         }
-                        .head-title{
-                            h5{
+                        .head-title {
+                            h5 {
                                 padding-top: 20px;
                                 font-weight: bold;
                             }
                         }
                     }
                 }
-                .watch-more-cnt{
+                .watch-more-cnt {
                     right: 0;
                     float: right;
-                    a{
+                    a {
                         color: $main-color;
                         float: right;
                         margin: 15px 0;
@@ -146,10 +145,9 @@
                 }
             }
         }
-        .swiper-course{
+        .swiper-course {
             margin: 40px;
             background-color: white;
-           
         }
     }
 }
@@ -214,11 +212,11 @@
                 padding: 15px;
                 background-color: #F6F6F6;
                 border: 1px solid $main-color;
-                .name-certi{
+                .name-certi {
                     text-transform: uppercase;
                     font-weight: bold;
                 }
-                .price-certi{
+                .price-certi {
                     color: $main-color;
                     font-weight: bold;
                 }
@@ -227,16 +225,16 @@
                     justify-content: space-between;
                     flex-direction: row;
                 }
-                &:hover{
-                    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.41);
-                    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.41);
-                    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.41);
+                &:hover {
+                    -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                    -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
                 }
             }
         }
         .watch-more-cnt {
             right: 0;
-            a{
+            a {
                 color: $main-color;
                 float: right;
                 margin: 15px 0;
@@ -249,30 +247,28 @@
 }
 
 // ===========================reason==============================
-.reason-wrapper{
-
+.reason-wrapper {
     padding: 5% 0;
-    .reason-item{
+    .reason-item {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: white;
         margin-bottom: 25px;
-        img{
+        img {
             padding-right: 20px;
         }
-        .item-content{
-            .right-reason-ctn{
+        .item-content {
+            .right-reason-ctn {
                 padding: 20px;
-                .reason-title{
-                    h5{
+                .reason-title {
+                    h5 {
                         font-size: 22px;
                         font-weight: bold;
                     }
-                    
                 }
-                .watch-more-cnt{
-                    a{
+                .watch-more-cnt {
+                    a {
                         right: 0;
                         float: right;
                         color: $main-color;
@@ -284,15 +280,16 @@
         }
     }
 }
+
 // =======================Customer================================
-.customer-wrapper{
+.customer-wrapper {
     padding: 5% 0;
     background-color: white;
-    .customer-content{
+    .customer-content {
         padding: 10% 0;
         margin-bottom: 10%;
         text-align: center;
-        img{
+        img {
             width: 130px;
             margin-bottom: 20px;
             border-radius: 50%;
@@ -301,31 +298,32 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
         }
-        .customer-name{
-            h5{
+        .customer-name {
+            h5 {
                 font-size: 18px;
                 font-weight: bold;
             }
         }
-        .customer-cmt{
-            p{
+        .customer-cmt {
+            p {
                 position: relative;
             }
         }
     }
 }
+
 // =========================Teacher============================
-.teacher-wrapper{
+.teacher-wrapper {
     padding: 5% 0;
     background-color: #F6F6F6;
-    .teacher-item{
+    .teacher-item {
         padding: 10% 0px;
         background-color: white;
         margin: 6% 0;
         padding: 15px;
         border: 1px solid $main-color;
         border-radius: 20px;
-        img{
+        img {
             width: 150px;
             margin-bottom: 20px;
             border-radius: 50%;
@@ -334,74 +332,72 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
         }
-        .top-part{
+        .top-part {
             display: flex;
             // justify-content: space-around;
             flex-direction: row;
-            .right-top-part{
+            .right-top-part {
                 display: block;
                 width: 100%;
-                .right-top{
+                .right-top {
                     width: 100%;
                     border-bottom: 2px solid $main-color;
                     height: 75px;
-                    .teacher-name{
+                    .teacher-name {
                         padding-left: 20px;
                     }
                 }
-                .right-bottom{
+                .right-bottom {
                     display: flex;
                     justify-content: space-between;
                     flex-direction: row;
                     padding-left: 20px;
-                 .num-course{
-                     h4{
-                        font-size: 25px;
-                        font-weight: bold;
-                     }
-                 }
+                    .num-course {
+                        h4 {
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
         }
-        
     }
 }
+
 // ======================News==================================
-.news-wrapper{
+.news-wrapper {
     padding: 5% 0;
-    .news-container{
+    .news-container {
         display: flex;
-        .new-item{
-            img{
+        .new-item {
+            img {
                 border: 1px solid $main-color;
             }
-            .item-ctn{
+            .item-ctn {
                 padding: 15px;
-                background-color: white ;
+                background-color: white;
                 border-right: 1px solid $main-color;
                 border-left: 1px solid $main-color;
                 border-bottom: 1px solid $main-color;
-                
-                .new-title{
-                    h5{
+                .new-title {
+                    h5 {
                         font-weight: bold;
                         padding-bottom: 5px;
                     }
                 }
-                .new-date{
+                .new-date {
                     padding: 10px 0;
-                    i{
+                    i {
                         color: $main-color;
                     }
-                    a{
+                    a {
                         color: $main-color;
                     }
                 }
             }
         }
-
     }
-    .watch-more-news{
+    .watch-more-news {
         text-align: center;
         margin: 20px 0;
     }

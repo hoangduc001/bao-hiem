@@ -275,8 +275,10 @@
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 600) {
                     $('.contact-floating').fadeIn();
+                    $('.download-floating').fadeIn();
                 } else {
                     $('.contact-floating').fadeOut();
+                    $('.download-floating').fadeOut();
                 }
             });
             $('.scrollup').click(function () {

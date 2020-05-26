@@ -106,11 +106,13 @@ Nav Menu style
 .top-search .input-group-addon.close-search {
     cursor: pointer;
 }
-.main-menu-ctn{
+
+.main-menu-ctn {
     @media (min-width: 992px) {
-    border-bottom: 3px solid $main-color;
+        border-bottom: 3px solid $main-color;
     }
 }
+
 .block-main-menu {
     // position: fixed;
     top: 0;
@@ -152,12 +154,12 @@ Nav Menu style
         align-items: center;
         .logo-main {
             z-index: 9;
-           transform: translate(10%, 25%);
-           -webkit-transform: translate(10%, 25%);
-           -moz-transform: translate(10%, 25%);
-           -ms-transform: translate(10%, 25%);
-           -o-transform: translate(10%, 25%);
-           img{
+            transform: translate(10%, 25%);
+            -webkit-transform: translate(10%, 25%);
+            -moz-transform: translate(10%, 25%);
+            -ms-transform: translate(10%, 25%);
+            -o-transform: translate(10%, 25%);
+            img {
                 width: 130px;
             }
         }
@@ -427,6 +429,7 @@ Nav Menu style
     -ms-transform: translate(-48%, -5%);
     -o-transform: translate(-48%, -5%);
 }
+
 .swiper-button-next {
     background-image: url('../images/home/arrow-right-active.png') !important;
     background-size: contain;
@@ -443,6 +446,7 @@ Nav Menu style
     -ms-transform: translate(48%, 5%);
     -o-transform: translate(48%, 5%);
 }
+
 // ============================ellipsis=======================================
 .ellipsis {
     overflow: hidden;
@@ -656,123 +660,6 @@ footer {
     }
 }
 
-// ================================network==============================
-#net-address {
-    // display: none;
-    position: relative;
-    // transform: translate(18%, 36%);
-    // bottom: 120px;
-    z-index: 3;
-    width: 100%;
-}
-
-.network-ctn {
-    // position: absolute;
-    background-color: #fff;
-    border: 1px solid #f36f21;
-    h5 {
-        color: $main-color;
-        font-family: HKNova-Regular;
-        text-transform: uppercase;
-    }
-    .address-detail {
-        h5 {
-            cursor: pointer;
-            span {
-                img {
-                    width: 15px;
-                    margin-right: 10px;
-                }
-            }
-            &:after {
-                font-family: Fontawesome;
-                content: '\f0d7';
-                float: right;
-            }
-        }
-        h5.collapsed {
-            cursor: pointer;
-            &::after {
-                font-family: Fontawesome;
-                content: '\f0d7';
-                float: right;
-            }
-        }
-    }
-    .net-item {
-        .address-ctn {
-            width: 36%;
-            margin-bottom: 2%;
-            background-color: #e6e7e8;
-            padding: 8px 20px;
-            border: 1px solid #ccc4;
-            border-radius: 20px;
-            outline: none;
-            select {
-                width: 100%;
-                border: none;
-                border-right: solid 1px;
-                outline: none;
-                color: #6b6c6e;
-                background-color: #e6e7e8;
-            }
-        }
-        hr.line {
-            border: 1px solid $main-color;
-        }
-        .address-list {
-            // height: 100px;
-            overflow: auto;
-            // width: 100%;
-            ul {
-                list-style: none;
-                li.address-item {
-                    display: grid;
-                    grid-template-columns: 4% 32% 32% 32%;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    margin-bottom: 5px;
-                    border-bottom: 1px dashed #ccc;
-                    .no span {
-                        color: $main-color;
-                        padding-right: 20px;
-                    }
-                    .order {
-                        color: $main-color;
-                    }
-                    .location {
-                        span {
-                            margin-right: 5px;
-                        }
-                    }
-                    .phone-contact {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-                }
-            }
-            ul.car-address {
-                overflow: auto;
-                height: 100px;
-            }
-            .car-address::-webkit-scrollbar-track {
-                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-                border-radius: 10px;
-                background-color: #c2c3c7;
-            }
-            .car-address::-webkit-scrollbar {
-                width: 5px;
-                background-color: #c2c3c7;
-            }
-            .car-address::-webkit-scrollbar-thumb {
-                border-radius: 10px;
-                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-                background-color: $main-color;
-            }
-        }
-    }
-}
-
 // ===============================sticky float left ==================================
 .contact-floating {
     position: fixed;
@@ -782,6 +669,30 @@ footer {
     z-index: 1024;
     cursor: pointer;
 }
+
+.download-floating {
+    position: fixed;
+    right: 0;
+    top: 125px;
+    display: none;
+    z-index: 1024;
+    cursor: pointer;
+    .down-title {
+        background-color: $main-color;
+        font-family: HKNova-Regular;
+        font-size: 16px;
+        height: 70px;
+        margin: auto;
+        text-align: center;
+        a {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+        }
+    }
+}
+
 // =================================favorite heart=============================
 .fa-heart-o {
     color: red;
@@ -790,94 +701,83 @@ footer {
     float: right;
     padding-right: 15px;
     padding-top: 15px;
-  }
-  
-  .fa-heart {
+}
+
+.fa-heart {
     color: red;
     cursor: pointer;
     font-size: 20px;
     padding-right: 15px;
     padding-top: 15px;
     float: right;
-  }
-  //==============================rating star=================================
-  .rate-star{
-    #half-stars{
+}
+
+//==============================rating star=================================
+.rate-star {
+    #half-stars {
         /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
         .rating-group {
-          display: inline-flex;
+            display: inline-flex;
         }
-        
         /* make hover effect work properly in IE */
         .rating__icon {
-          pointer-events: none;
+            pointer-events: none;
         }
-        
         /* hide radio inputs */
         .rating__input {
-         position: absolute !important;
-         left: -9999px !important;
+            position: absolute !important;
+            left: -9999px !important;
         }
-      
         /* set icon padding and size */
         .rating__label {
-          cursor: pointer;
-          /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
-          padding: 0 0.1em;
-          font-size: 1.3rem;
+            cursor: pointer;
+            /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+            padding: 0 0.1em;
+            font-size: 1.3rem;
         }
-      
         /* add padding and positioning to half star labels */
         .rating__label--half {
-          padding-right: 0;
-          margin-right: -0.6em;
-          z-index: 2;
+            padding-right: 0;
+            margin-right: -0.6em;
+            z-index: 2;
         }
-        
         /* set default star color */
         .rating__icon--star {
-          color: orange;
+            color: orange;
         }
-        
         /* set color of none icon when unchecked */
         .rating__icon--none {
-          color: #eee;
+            color: #eee;
         }
-      
         /* if none icon is checked, make it red */
-        .rating__input--none:checked + .rating__label .rating__icon--none {
-          color: red;
+        .rating__input--none:checked+.rating__label .rating__icon--none {
+            color: red;
         }
-      
         /* if any input is checked, make its following siblings grey */
-        .rating__input:checked ~ .rating__label .rating__icon--star {
-          color: #ddd;
+        .rating__input:checked~.rating__label .rating__icon--star {
+            color: #ddd;
         }
-        
         /* make all stars orange on rating group hover */
         .rating-group:hover .rating__label .rating__icon--star,
         .rating-group:hover .rating__label--half .rating__icon--star {
-          color: orange;
+            color: orange;
         }
-      
         /* make hovered input's following siblings grey on hover */
-        .rating__input:hover ~ .rating__label .rating__icon--star,
-        .rating__input:hover ~ .rating__label--half .rating__icon--star {
-          color: #ddd;
+        .rating__input:hover~.rating__label .rating__icon--star,
+        .rating__input:hover~.rating__label--half .rating__icon--star {
+            color: #ddd;
         }
-        
         /* make none icon grey on rating group hover */
-        .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
-           color: #eee;
+        .rating-group:hover .rating__input--none:not(:hover)+.rating__label .rating__icon--none {
+            color: #eee;
         }
-      
         /* make none icon red on hover */
-        .rating__input--none:hover + .rating__label .rating__icon--none {
-          color: red;
+        .rating__input--none:hover+.rating__label .rating__icon--none {
+            color: red;
         }
-      }
-      
+    }
 }
+
 // ===============================scrollup=====================================
 .scrollup {
     position: fixed;
