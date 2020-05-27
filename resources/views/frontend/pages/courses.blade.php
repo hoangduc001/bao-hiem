@@ -16,12 +16,14 @@
 
 @section('content')
     <div class="main-wrapper">
-        <section class="couse-detail">
-            <div class="course-detail-wrapper">
+    @include('frontend/pages/floating-element')
+    @include('frontend/pages/breadcum')
+        <section class="course-section">
+            <div class="course-total-wrapper">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="course-detail-block">
+                            <div class="course-main-block">
                                 <div class="panel-group" id="accordion">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">

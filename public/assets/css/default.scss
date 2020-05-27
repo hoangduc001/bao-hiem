@@ -154,11 +154,11 @@ Nav Menu style
         align-items: center;
         .logo-main {
             z-index: 9;
-            transform: translate(10%, 25%);
-            -webkit-transform: translate(10%, 25%);
-            -moz-transform: translate(10%, 25%);
-            -ms-transform: translate(10%, 25%);
-            -o-transform: translate(10%, 25%);
+            transform: translate(10%, 33%);
+            -webkit-transform: translate(10%, 33%);
+            -moz-transform: translate(10%, 33%);
+            -ms-transform: translate(10%, 33%);
+            -o-transform: translate(10%, 33%);
             img {
                 width: 130px;
             }
@@ -668,6 +668,13 @@ footer {
     display: none;
     z-index: 1024;
     cursor: pointer;
+    img {
+        width: 70%;
+        border-radius: 50%;
+        background-color: white;
+        margin-bottom: 10px;
+        border: 1px solid $main-color;
+    }
 }
 
 .download-floating {
@@ -690,6 +697,72 @@ footer {
             margin: auto;
             color: white;
         }
+    }
+}
+
+// =================================breadcum===================================
+.breadcum-ctn {
+    background-image: linear-gradient(to right, rgba(10, 111, 27, 0.5), rgba(0, 0, 0, 0));
+    top: 24%;
+    left: 12%;
+    padding: 0 5%;
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    ol {
+        margin: 0;
+        padding: 3px 0
+    }
+    .cd-breadcrumb::after,
+    .cd-multi-steps::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    .cd-breadcrumb li,
+    .cd-multi-steps li {
+        display: inline-block;
+        float: left;
+        margin: 0.5em 0;
+    }
+    .cd-breadcrumb li::after,
+    .cd-multi-steps li::after {
+        /* this is the separator between items */
+        display: inline-block;
+        content: '\00bb';
+        margin: 0 .6em;
+        color: #fff;
+    }
+    .cd-breadcrumb li:last-of-type::after,
+    .cd-multi-steps li:last-of-type::after {
+        /* hide separator after the last item */
+        display: none;
+    }
+    .cd-breadcrumb.custom-separator li::after,
+    .cd-multi-steps.custom-separator li::after {
+        /* replace the default separator with a custom icon */
+        content: '';
+        height: 16px;
+        width: 16px;
+        background: url(../images/default/cd-custom-separator.svg) no-repeat center center;
+        vertical-align: middle;
+    }
+    .cd-breadcrumb li>*,
+    .cd-multi-steps li>* {
+        /* single step */
+        display: inline-block;
+        font-size: 1rem;
+        color: #fff;
+    }
+    .cd-breadcrumb li.current>*,
+    .cd-multi-steps li.current>* {
+        /* selected step */
+        color: $main-color;
+    }
+    .no-touch .cd-breadcrumb a:hover,
+    .no-touch .cd-multi-steps a:hover {
+        /* steps already visited */
+        color: $main-color;
     }
 }
 

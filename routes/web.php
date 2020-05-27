@@ -14,8 +14,19 @@
 Route::get('/', function () {
     return view('frontend.home');
 });
+// ====================courses================
 Route::get('/course-detail', function () {
-    return view('frontend.pages.course_detail');
+    return view('frontend.pages.course-detail');
+});
+Route::get('/courses', function () {
+    return view('frontend.pages.courses');
+});
+//=================luyện thi==================
+Route::get('/pre-certi', function () {
+    return view('frontend.pages.pre-certi');
+});
+Route::get('/test-list', function () {
+    return view('frontend.pages.test-list');
 });
 Auth::routes();
 
