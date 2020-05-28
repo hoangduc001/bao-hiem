@@ -169,7 +169,7 @@ Nav Menu style
 }
 
 .block-main-menu .main-menu .logo-main img {
-  width: 130px;
+  width: 150px;
 }
 
 .block-main-menu .main-menu .right-nav {
@@ -764,14 +764,13 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
 .breadcum-ctn {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(10, 111, 27, 0.5)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to right, rgba(10, 111, 27, 0.5), rgba(0, 0, 0, 0));
-  top: 24%;
-  left: 12%;
   padding: 0 5%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
+  left: 10%;
 }
 
 .breadcum-ctn ol {

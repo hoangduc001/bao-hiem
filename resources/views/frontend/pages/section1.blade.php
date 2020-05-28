@@ -1,5 +1,12 @@
 <div id="section1" class="section1">
     <div class="sec1-wrapper text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    @include('frontend/pages/breadcum')
+                </div>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div id="slideBanner" class="swiper-container swiper-banner">

@@ -17,7 +17,6 @@
 @section('content')
     <div class="main-wrapper">
     @include('frontend/pages/floating-element')
-    @include('frontend/pages/breadcum')
         <section class="course-section">
             <div class="course-total-wrapper">
                 <div class="container">
@@ -31,9 +30,9 @@
                                                 <div class="left-title">
                                                     <div class="course-name">
                                                         <h5>Khóa học phụ trợ bảo hiểm</h5>
-                                                        <div class="course-score"><h5>6.000.000 <span>đ</span></h5></div>
+                                                        <div class="course-price-tag"><h6>6.000.000 <span>đ</span></h6></div>
                                                     </div>
-                                                    <a href="#" class="btn btn-default square-btn ">Mua khóa học</a>
+                                                    <a href="#" class="btn btn-default square-btn ">Vào thi</a>
                                                 </div>
                                                 <div class="right-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed" aria-expanded="true"></a></div>
 
@@ -105,9 +104,9 @@
                                                 <div class="left-title">
                                                     <div class="course-name">
                                                         <h5>Khóa học đại lý bảo hiểm</h5>
-                                                        <div class="rating-score"><span><img src="{{ url('/') }}/assets/images/home/full-star.png?{{ config('custom.version') }}" alt=""></span><div class="total-scrore-rate"><strong>4,5 </strong><span>(50.412)</span></div></div>
+                                                        <div class="course-price-tag"><h6>6.000.000 <span>đ</span></h6></div>
                                                     </div>
-                                                    <a href="#" class="btn btn-default square-btn ">Mua khóa học</a>
+                                                    <a href="#" class="btn btn-default square-btn ">Vào thi</a>
                                                 </div>
                                                 <div class="right-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed" aria-expanded="false"></a></div>
 
@@ -119,14 +118,14 @@
                                                     <div class="main-img">
                                                         <img src="{{ url('/') }}/assets/images/course/detail1.png?{{ config('custom.version') }}" alt="">
                                                         <div class="course_overlay">
-                                                            <div class="overlay-ctn text-left p-l-15">
+                                                            <!-- <div class="overlay-ctn text-left p-l-15">
                                                                 <div class="course-rate">
                                                                 <div class="course-total"><span class="line-through">5.000.000</span> 3.500.000đ <span>đ</span></div>
                                                                 <div class="buy-total">
-                                                                        <a href="#" class="btn btn-default ">Mua khóa học</a>
+                                                                        <a href="#" class="btn btn-default ">Vào thi</a>
                                                                 </div>
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
                                                     </div>
                                                     <div class="detail-content">
@@ -137,7 +136,7 @@
                                                     <div class="other-item-ctn">
                                                         <div class="row">
                                                             @for($i=1;$i<=9;$i++)
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-3">
                                                                 <div class="item-course">
                                                                     <img src="{{ url('/') }}/assets/images/course/item.png?{{ config('custom.version') }}" alt="">
                                                                     <div class="other-item-content">
@@ -147,9 +146,9 @@
                                                                                 <div class="price">
                                                                                     1.500.000 <span>đ</span>
                                                                                 </div>
-                                                                                <div class="favorite-btn">
+                                                                                <!-- <div class="favorite-btn">
                                                                                     <span class="heart"><i class="fa fa-heart-o" aria-hidden="true" ></i> </span>
-                                                                                </div>
+                                                                                </div> -->
                                                                             </div>
                                                                         </div>
                                                                         <div class="des-ctn">
@@ -157,7 +156,10 @@
                                                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit accusamus expedita voluptatem dolor voluptates ullam facere? Voluptates excepturi ex, dolore doloribus sequi dolor corrupti magni, facere eos, voluptate doloremque corporis.
                                                                             </p>
                                                                         </div>
-                                                                        <a href="#" class="btn btn-default buy-btn ">Mua ngay</a>
+                                                                        <div class="pre-certi-btn">
+                                                                            <a href="#" class="btn btn-default pre-btn ">Mô tả đề thi</a>
+                                                                            <a href="#" class="btn btn-default pre-btn ">Vào thi</a>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -174,9 +176,9 @@
                                                 <div class="left-title">
                                                     <div class="course-name">
                                                         <h5>Khóa học phụ trợ bảo hiểm</h5>
-                                                        <div class="rating-score"><span><img src="{{ url('/') }}/assets/images/home/full-star.png?{{ config('custom.version') }}" alt=""></span><div class="total-scrore-rate"><strong>4,5 </strong><span>(50.412)</span></div></div>
+                                                        <div class="course-price-tag"><h6>6.000.000 <span>đ</span></h6></div>
                                                     </div>
-                                                    <a href="#" class="btn btn-default square-btn ">Mua khóa học</a>
+                                                    <a href="#" class="btn btn-default square-btn ">Vào thi</a>
                                                 </div>
                                                 <div class="right-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed" aria-expanded="false"></a></div>
 
@@ -188,14 +190,14 @@
                                                     <div class="main-img">
                                                         <img src="{{ url('/') }}/assets/images/course/detail1.png?{{ config('custom.version') }}" alt="">
                                                         <div class="course_overlay">
-                                                            <div class="overlay-ctn text-left p-l-15">
+                                                            <!-- <div class="overlay-ctn text-left p-l-15">
                                                                 <div class="course-rate">
                                                                 <div class="course-total"><span class="line-through">5.000.000</span> 3.500.000đ <span>đ</span></div>
                                                                 <div class="buy-total">
                                                                         <a href="#" class="btn btn-default ">Mua khóa học</a>
                                                                 </div>
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
                                                     </div>
                                                     <div class="detail-content">
@@ -206,7 +208,7 @@
                                                     <div class="other-item-ctn">
                                                         <div class="row">
                                                             @for($i=1;$i<=9;$i++)
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-3">
                                                                 <div class="item-course">
                                                                     <img src="{{ url('/') }}/assets/images/course/item.png?{{ config('custom.version') }}" alt="">
                                                                     <div class="other-item-content">
@@ -216,9 +218,9 @@
                                                                                 <div class="price">
                                                                                     1.500.000 <span>đ</span>
                                                                                 </div>
-                                                                                <div class="favorite-btn">
+                                                                                <!-- <div class="favorite-btn">
                                                                                     <span class="heart"><i class="fa fa-heart-o" aria-hidden="true" ></i> </span>
-                                                                                </div>
+                                                                                </div> -->
                                                                             </div>
                                                                         </div>
                                                                         <div class="des-ctn">
@@ -226,7 +228,10 @@
                                                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit accusamus expedita voluptatem dolor voluptates ullam facere? Voluptates excepturi ex, dolore doloribus sequi dolor corrupti magni, facere eos, voluptate doloremque corporis.
                                                                             </p>
                                                                         </div>
-                                                                        <a href="#" class="btn btn-default buy-btn ">Mua ngay</a>
+                                                                        <div class="pre-certi-btn">
+                                                                            <a href="#" class="btn btn-default pre-btn ">Mô tả đề thi</a>
+                                                                            <a href="#" class="btn btn-default pre-btn ">Vào thi</a>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>

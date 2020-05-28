@@ -160,7 +160,7 @@ Nav Menu style
             -ms-transform: translate(10%, 33%);
             -o-transform: translate(10%, 33%);
             img {
-                width: 130px;
+                width: 150px;
             }
         }
         .left-nav {
@@ -701,14 +701,16 @@ footer {
 }
 
 // =================================breadcum===================================
+.main-wrapper{
+    // position: relative;
+}
 .breadcum-ctn {
     background-image: linear-gradient(to right, rgba(10, 111, 27, 0.5), rgba(0, 0, 0, 0));
-    top: 24%;
-    left: 12%;
     padding: 0 5%;
     width: fit-content;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
+    left: 10%;
     ol {
         margin: 0;
         padding: 3px 0

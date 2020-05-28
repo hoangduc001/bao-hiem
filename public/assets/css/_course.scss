@@ -34,13 +34,29 @@
                         }
                     }
                     h5 {
-                        font-size: 1, 3rem;
+                        font-size: 1.3rem;
                         font-family: HKNova-Regular;
                         color: white;
                         margin: auto;
                         padding: 5px 50px;
                         border-right: 1px solid;
                     }
+                }
+                .course-price-tag{
+                    h6{
+                        font-size: 1.3rem;
+                        font-family: HKNova-Regular;
+                        color: white;
+                        margin: auto 0;
+                        padding: 5px 50px;
+                        top: 0;
+                        bottom: 0;
+                        transform: translate(0px, 5px);
+                        -webkit-transform: translate(0px, 5px);
+                        -moz-transform: translate(0px, 5px);
+                        -ms-transform: translate(0px, 5px);
+                        -o-transform: translate(0px, 5px);
+}
                 }
             }
             .right-title {
@@ -259,18 +275,15 @@
                             display: flex;
                             justify-content: space-between;
                             flex-direction: row;
+                            margin: 20px 0;
                             a.pre-btn {
-                                transform: translate(0%, 24px);
+                                // transform: translate(0%, 24px);
                                 margin: auto;
                                 left: 0;
                                 right: 0;
                                 position: relative;
                                 padding: 7px 18px;
                                 background-color: #F9F9F9;
-                                -webkit-transform: translate(0%, 24px);
-                                -moz-transform: translate(0%, 24px);
-                                -ms-transform: translate(0%, 24px);
-                                -o-transform: translate(0%, 24px);
                                 &:hover {
                                     background-color: $main-color;
                                     color: white;
@@ -298,4 +311,195 @@
 
 .course-detail-wrapper {
     .course-detail-block {}
+}
+
+.test-list-wrapper{
+    .trial-examine{
+        a{
+            color: $main-color;
+            float: right;
+            font-family: HKNova-Regular;
+            font-size: 1rem;
+        }
+    }
+    .test-list-block{
+        margin-bottom: 8%;
+        .swiper-test{
+            .content-test-wrapper{
+                .test-img{
+                    position: relative;
+                    overflow: hidden;
+                    .ctn-img{
+                        position: relative;
+                        .logo-brand{
+                            position: absolute;
+                            top: 0;
+                            padding: 10px;
+                        }
+                    }
+                    .overlay-test {
+                        width: 100%;
+                        height: 50%;
+                        background-color: #0d723bb8;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        // padding-top: 35%;
+                        opacity: 0;
+                        transition: all 0.2s;
+                        .overlay-ctn {
+                            .test-brand {
+                                color: #fff;
+                                font-family: HKNova-Regular;
+                                font-size: 1.7rem;
+                                text-align: center;
+                                margin: auto;
+                                strong{
+                                    text-transform: uppercase;
+                                }
+                                span{
+                                    font-size: 1.4rem;
+                                }
+                                a{
+                                    color: #fff;
+                                }
+                                p{
+                                    font-size: 1rem;
+                                    font-family: HKNova-Regular;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .overlay-test{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .enroll-test{
+                background-color: white;
+                padding: 20px ;
+                text-align: center;
+               .btn-test-enroll{
+                    padding: 5px 50px;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+               }
+            }
+        }
+    }
+    
+}
+.type-list-wrapper{
+    padding: 3%;
+    background: url(../images/course/bg1.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+    .panel-heading {
+        .panel-title {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            display: table;
+            -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+            font-family: HKNova-Bold;
+            a {
+                display: table-cell;
+                vertical-align: middle;
+                color: #000;
+                font-weight: 500;
+                font-size: 18px;
+                position: absolute;
+                padding: 10px 0;
+                -webkit-transition: all .4s linear;
+                transition: all .4s linear;
+                &::after {
+                   position: absolute;
+                   font: 18px fontawesome;
+                   content: "\f0d7";
+                   width: 26px;
+                   height: 26px;
+                   background-image: none;
+                   font-size: 1.083em;
+                   font-weight: 500;
+                   text-align: center;
+                   top: 50%;
+                   right: -30px;
+                   -webkit-transition: all .4s ease-in;
+                   transition: all .4s ease-in;
+                   line-height: 24px;
+                   color:#000;
+                   transform: translateY(-50%);
+                   -webkit-transform: translateY(-50%);
+                   -moz-transform: translateY(-50%);
+                   -ms-transform: translateY(-50%);
+                   -o-transform: translateY(-50%);
+                }
+            }
+            .collapsed {
+                &::after {
+                    position: absolute;
+                    font: 18px fontawesome;
+                    content: "\f0d8";
+                    width: 26px;
+                    height: 26px;
+                    background-image: none;
+                    font-size: 1.083em;
+                    font-weight: 500;
+                    text-align: center;
+                    line-height: 24px;
+                    top: 50%;
+                    right: -30px;
+                    -webkit-transform: translateY(-50%) rotate(0deg);
+                    transform: translateY(-50%) rotate(0deg);
+                    -webkit-transition: all .4s ease-in;
+                    transition: all .4s ease-in;
+                }
+                a {
+                    color: #000;
+                }
+            }
+        }
+        .click {
+            a {
+                color: #000;
+            }
+        }
+    }
+    .type-test-list{
+        width: 100%;
+        .type-ctn{
+            .type-item{
+                background-color: white;
+                padding: 30px;
+                margin-bottom: 30px;
+                position: relative;
+                min-height: 120px;
+                .type-name{
+                    font-family: HKNova-Bold;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                }
+                .btn-type-enroll{
+                    position: absolute;
+                    right: 0;
+                    color: white;
+                    background-color: $main-color;
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                }
+
+                &:hover{
+                    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.29);
+                    -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.29);
+                    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.29);
+                }
+            }
+        }
+    }
 }

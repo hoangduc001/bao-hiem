@@ -17,7 +17,7 @@
 @section('content')
     <div class="main-wrapper">
     @include('frontend/pages/floating-element')
-    @include('frontend/pages/breadcum')
+    
         <section class="course-section">
             <div class="course-total-wrapper">
                 <div class="container">
@@ -35,7 +35,7 @@
                                                     </div>
                                                     <a href="#" class="btn btn-default square-btn ">Mua khóa học</a>
                                                 </div>
-                                                <div class="right-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed" aria-expanded="true"></a></div>
+                                                <div class="right-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="" aria-expanded="true"></a></div>
 
                                             </div>
                                         </div>

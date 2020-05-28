@@ -21,7 +21,7 @@
             ele.slideTeacher = '.swiper-teacher';
             ele.slideBanner = '.swiper-banner';
             ele.slideCourse = '.swiper-course';
-            ele.slideSk = '.swiper-sk';
+            ele.slideTest = '.swiper-test';
         };
 
         this.bindEvents = function() {
@@ -200,7 +200,7 @@
                     }
                 });
 
-                var swiper7 = new Swiper(ele.slideSk, {
+                var swiper7 = new Swiper(ele.slideTest, {
                     slidesPerView: 3,
                     spaceBetween: 30,
                     // autoplay: {

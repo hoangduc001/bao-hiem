@@ -403,8 +403,10 @@ Button
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    // -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.29);
+    // -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.29);
+    // box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.29);
 }
-
 .sign {
     border-radius: 0px;
     -webkit-border-radius: 0px;
