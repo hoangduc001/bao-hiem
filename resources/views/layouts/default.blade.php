@@ -307,9 +307,10 @@
     <script src="{{ url('assets/js/custom.js?'.config('custom.version')) }}"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src='https://foliotek.github.io/Croppie/croppie.js'></script>
+    <script src='https://isotope.metafizzy.co/isotope.pkgd.min.js'></script>
 
-  <script>
-    AOS.init();
-  </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
