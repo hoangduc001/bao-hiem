@@ -237,33 +237,37 @@
             });
         };
         // =======================filter muc do de=================================
-        // var $container = $('#subject-test');
-
-        // $container.isotope({
-        //   itemSelector: '.subject-item',
-        //   layoutMode: 'fitRows',
-        // });
-      
-        // $('#filters').on( 'click', 'a', function() {
-        //     event.preventDefault()    
-        //   var filterValue = $(this).attr('data-filter');
-        //   $('#filters a').removeClass('active');
-        //   $(this).addClass('active');
-        //   $container.isotope({ filter: filterValue });
-        // });
         
-        var selectedClass = "";
-		$("a").click(function(){
-            event.preventDefault()
-		    selectedClass = $(this).attr("data-rel");
-            $("#subject-test").fadeTo(100, 0.1);
-		    $("#subject-test div.col-3").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-            $("."+selectedClass).fadeIn();
-            $("#subject-test").fadeTo(500, 1);
-            }, 500);
+        // var selectedClass = "";
+		// $("a").click(function(){
+        //     event.preventDefault()
+		//     selectedClass = $(this).attr("data-rel");
+        //     $("#subject-test").fadeTo(100, 0.1);
+		//     $("#subject-test div.col-3").not("."+selectedClass).fadeOut();
+        //     setTimeout(function() {
+        //     $("."+selectedClass).fadeIn();
+        //     $("#subject-test").fadeTo(500, 1);
+        //     }, 500);
 		
-	});
+        // });
+
+        $('.filters ul li').click(function(){
+            $('.filters ul li').removeClass('active');
+            $(this).addClass('active');
+            
+            var data = $(this).attr('data-filter');
+            $grid.isotope({
+              filter: data
+            })
+          });
+          
+          var $grid = $(".grid").isotope({
+            itemSelector: ".all",
+            percentPosition: true,
+            masonry: {
+              columnWidth: ".all"
+            }
+          })
         // ===============Heart-like========================
         $(".heart").click(function(){
             if($(".heart").hasClass("liked")){

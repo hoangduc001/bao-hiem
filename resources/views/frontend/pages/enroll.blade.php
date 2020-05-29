@@ -11,34 +11,29 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700" rel="stylesheet">
 
     <!-- <script src="{{ url('assets/js/?'.config('custom.version')) }}"></script> -->
+  
+
 @stop
 
 @section('content')
     <div class="main-wrapper">
-    @include('frontend/pages/floating-element')
-    
+        @include('frontend/pages/floating-element')
         <section class="enroll-section">
             <div class="enroll-wrapper">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="select-ctn">
-                                <div id="filters" class="portfolio-filters">
-                                    <ul class="list-inline">
-                                            
-                                        <li><a id="all" href="#" data-rel="all" class="active"><h5>Tất cả</h5></a></li>	
-                                        
-                                        <li><a href="#" data-rel="diffcult"><h5>Mức độ khó</h5></a></li>
-                                        
-                                        <li><a href="#" data-rel="medium"><h5>Mức độ trung bình</h5></a></li>
-                                        
-                                        <li><a href="#" data-rel="easy"><h5>Mức độ dễ</h5></a></li>
-                                    </ul>
-                                </div>
+                           <div class="select-ctn filters">
+                                <ul>
+                                    <li class="active" data-filter="*">All</li>
+                                    <li data-filter=".diffcult">Mức độ khó</li>
+                                    <li data-filter=".medium">Mức độ trung bình</li>
+                                    <li data-filter=".easy">Mức độ dễ</li>
+                                </ul>
                             </div>
                             <div class="test-subject-wrapper">
-                                <div id="subject-test" class="subject-ctn">
-                                    <div class="row">
+                                <div class="filters-content subject-ctn">
+                                    <div class="row grid">
                                         @for($i=1;$i<=2;$i++)
                                             <div class="col-3 diffcult all">
                                                 <div class="subject-item ">
@@ -124,63 +119,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div id="portfolio">
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile medium all">
-                                    
-                                </div>
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile easy all">
-                                    
-                                </div>
-                                <div class="tile medium all">
-                                    
-                                </div>
-                                <div class="tile easy all">
-                                    
-                                </div>
-                                <div class="tile easy all">
-                                    
-                                </div>
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile easy all">
-                                    
-                                </div>
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile medium all">
-                                    
-                                </div>
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile medium all">
-                                    
-                                </div>
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile diffcult all">
-                                    
-                                </div>
-                                <div class="tile medium all">
-                                    
-                                </div>
-                                </div>
-                                
-                                    
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>

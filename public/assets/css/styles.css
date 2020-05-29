@@ -2849,11 +2849,91 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.29);
 }
 
-.enroll-wrapper {
+.enroll-section .enroll-wrapper {
   margin: 5% 0;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item {
+.enroll-section .enroll-wrapper .filters {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.enroll-section .enroll-wrapper .filters ul {
+  padding: 0;
+}
+
+.enroll-section .enroll-wrapper .filters ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.enroll-section .enroll-wrapper .filters ul li:after {
+  content: '';
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  background: #333;
+  -webkit-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.enroll-section .enroll-wrapper .filters ul li:hover:after {
+  width: calc(100% - 60px);
+  -webkit-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.enroll-section .enroll-wrapper .filters ul li.active:after {
+  width: calc(100% - 60px);
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content {
+  margin-top: 50px;
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content .show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content .hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content .item {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content .item .p-inner {
+  padding: 20px 30px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content .item .p-inner h5 {
+  font-size: 15px;
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content .item .p-inner .cat {
+  font-size: 13px;
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .filters-content .item img {
+  width: 100%;
+}
+
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item {
   background-color: white;
   padding: 30px;
   text-align: center;
@@ -2864,18 +2944,18 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.28);
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .title {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .title {
   text-transform: uppercase;
   font-family: HKNova-Bold;
   font-size: 1.2rem;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress-num {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress-num {
   font-family: HKNova-Regular;
   font-size: .8rem;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress {
   height: 10px;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -2884,7 +2964,7 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   -o-border-radius: 30px;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress .bar {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress .bar {
   position: relative;
   float: left;
   min-width: 1%;
@@ -2892,7 +2972,7 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   background: #0d723b;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress .percent {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .progress .percent {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2904,21 +2984,21 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   color: white;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result {
   margin: 25px;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result .btn-enroll {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result .btn-enroll {
   width: 80%;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result .btn-enroll-test {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result .btn-enroll-test {
   background-color: #0d723b;
   color: white;
   font-family: HKNova-Bold;
 }
 
-.enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result .btn-enroll-fail {
+.enroll-section .enroll-wrapper .test-subject-wrapper .subject-ctn .subject-item .subject-content .result .btn-enroll-fail {
   background-color: #711212;
   color: white;
   font-family: HKNova-Bold;
