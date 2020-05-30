@@ -121,6 +121,68 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="enrol-resource">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="colapse-title">
+                                            <div class="left-title">
+                                                <div class="course-name">
+                                                    <h5>Tài liệu ôn tập</h5>
+                                                </div>
+                                            </div>
+                                            <div class="right-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-doc" class="collapsed" aria-expanded="false"></a></div>
+
+                                        </div>
+                                    </div>
+                                    <div id="collapse-doc" class="panel-collapse collapse " aria-expanded="false" >
+                                        <div class="panel-body">
+                                            <div class="detail-ctn">
+                                                <div class="detail-content">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Tempora expedita laborum quos soluta illum molestiae placeat voluptate praesentium ad voluptatum. Incidunt maxime repellendus dolorem tempore voluptatum vero dolore.
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse consequatur, vitae, illo repellat hic perspiciatis illum deserunt dolores voluptatem ut repudiandae dolore a voluptas tenetur, totam nihil iusto iure officia!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="colapse-title">
+                                            <div class="left-title">
+                                                <div class="course-name">
+                                                    <h5>Những câu hay sai</h5>
+                                                </div>
+                                            </div>
+                                            <div class="right-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-frequent" class="collapsed" aria-expanded="false"></a></div>
+
+                                        </div>
+                                    </div>
+                                    <div id="collapse-frequent" class="panel-collapse collapse " aria-expanded="fasle" >
+                                        <div class="panel-body">
+                                            <div class="detail-ctn">
+                                                <div class="detail-content">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Tempora expedita laborum quos soluta illum molestiae placeat voluptate praesentium ad voluptatum. Incidunt maxime repellendus dolorem tempore voluptatum vero dolore.
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse consequatur, vitae, illo repellat hic perspiciatis illum deserunt dolores voluptatem ut repudiandae dolore a voluptas tenetur, totam nihil iusto iure officia!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
             </div>
         </section>

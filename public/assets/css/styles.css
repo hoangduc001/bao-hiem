@@ -1523,6 +1523,150 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   background-color: #0d723b;
 }
 
+.panel-group {
+  width: 100%;
+}
+
+.colapse-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.colapse-title .left-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.colapse-title .left-title .square-btn {
+  font-size: 1.2rem;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.colapse-title .left-title .course-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #0d723b;
+  margin-right: 3px;
+}
+
+.colapse-title .left-title .course-name .rating-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colapse-title .left-title .course-name .rating-score .total-scrore-rate {
+  margin: auto;
+  color: white;
+  padding: 5px 10px;
+}
+
+.colapse-title .left-title .course-name .rating-score .total-scrore-rate strong {
+  font-size: 1.3rem;
+}
+
+.colapse-title .left-title .course-name h5 {
+  font-size: 1.3rem;
+  font-family: HKNova-Regular;
+  color: white;
+  margin: auto;
+  padding: 5px 50px;
+  border-right: 1px solid;
+}
+
+.colapse-title .left-title .course-price-tag h6 {
+  font-size: 1.3rem;
+  font-family: HKNova-Regular;
+  color: white;
+  margin: auto 0;
+  padding: 5px 50px;
+  top: 0;
+  bottom: 0;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+  -o-transform: translate(0px, 5px);
+}
+
+.colapse-title .right-title {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #0d723b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.colapse-title .right-title a {
+  color: #bcbec0;
+}
+
+.colapse-title .right-title a::after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 20px;
+  height: 16px;
+  margin-top: -10px;
+  font: 18px fontawesome;
+  content: "\f0d8";
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.colapse-title .right-title .collapsed::after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 20px;
+  height: 16px;
+  margin-top: -5px;
+  font: 18px fontawesome;
+  content: "\f0d8";
+}
+
+.panel-heading {
+  margin: 3% 0;
+}
+
+.panel-heading .click a {
+  color: #000;
+}
+
 .modal {
   height: 370px;
   background-color: #0d723b;
@@ -2273,152 +2417,12 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   margin: 20px 0;
 }
 
-.course-total-wrapper .course-main-block .colapse-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title .square-btn {
-  font-size: 1.2rem;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title .course-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #0d723b;
-  margin-right: 3px;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title .course-name .rating-score {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title .course-name .rating-score .total-scrore-rate {
-  margin: auto;
-  color: white;
-  padding: 5px 10px;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title .course-name .rating-score .total-scrore-rate strong {
-  font-size: 1.3rem;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title .course-name h5 {
-  font-size: 1.3rem;
-  font-family: HKNova-Regular;
-  color: white;
-  margin: auto;
-  padding: 5px 50px;
-  border-right: 1px solid;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .left-title .course-price-tag h6 {
-  font-size: 1.3rem;
-  font-family: HKNova-Regular;
-  color: white;
-  margin: auto 0;
-  padding: 5px 50px;
-  top: 0;
-  bottom: 0;
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  -moz-transform: translate(0px, 5px);
-  -ms-transform: translate(0px, 5px);
-  -o-transform: translate(0px, 5px);
-}
-
-.course-total-wrapper .course-main-block .colapse-title .right-title {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-color: #0d723b;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .right-title a {
-  color: #bcbec0;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .right-title a::after {
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  width: 20px;
-  height: 16px;
-  margin-top: -10px;
-  font: 18px fontawesome;
-  content: "\f0d8";
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.course-total-wrapper .course-main-block .colapse-title .right-title .collapsed::after {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  width: 20px;
-  height: 16px;
-  margin-top: -5px;
-  font: 18px fontawesome;
-  content: "\f0d8";
-}
-
-.course-total-wrapper .course-main-block .panel-heading {
-  margin: 3% 0;
-}
-
-.course-total-wrapper .course-main-block .panel-heading .click a {
-  color: #000;
-}
-
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img {
+.course-total-wrapper .course-main-block .detail-ctn .main-img {
   position: relative;
   overflow: hidden;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course_overlay {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course_overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(10, 111, 27, 0.3);
@@ -2430,30 +2434,30 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   transition: all 0.2s;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course_overlay .overlay-ctn .course-total {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course_overlay .overlay-ctn .course-total {
   color: #F4C150;
   font-family: HKNova-Bold;
   font-size: 1.7rem;
   padding-left: 25px;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course_overlay .overlay-ctn .course-total span.line-through {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course_overlay .overlay-ctn .course-total span.line-through {
   text-decoration: line-through;
   color: white;
   font-size: 1.2rem;
   font-family: HKNova-Regular;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course_overlay .overlay-ctn .buy-total {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course_overlay .overlay-ctn .buy-total {
   padding-left: 25px;
   margin-top: 20px;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course_overlay .overlay-ctn .course_overlay a {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course_overlay .overlay-ctn .course_overlay a {
   font-size: 1.3rem;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course_overlay a {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course_overlay a {
   margin: 0 auto;
   color: #0d723b;
   border: 1px solid #fff;
@@ -2463,13 +2467,13 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   background-color: white;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course-price {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course-price {
   font-size: 18px;
   color: #F4C150;
   font-family: HKNova-Bold;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .main-img .course-rate {
+.course-total-wrapper .course-main-block .detail-ctn .main-img .course-rate {
   width: 50%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
@@ -2477,15 +2481,15 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   position: absolute;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .detail-content {
+.course-total-wrapper .course-main-block .detail-ctn .detail-content {
   margin: 2% 0;
 }
 
-.course-total-wrapper .course-main-block .panel-body .detail-ctn .detail-content p {
+.course-total-wrapper .course-main-block .detail-ctn .detail-content p {
   font-family: HKNova-Regular;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn {
+.course-total-wrapper .course-main-block .other-item-ctn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2498,25 +2502,25 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
           justify-content: space-between;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi {
   background-color: white;
   margin-bottom: 50px;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content {
   padding: 10px;
   position: relative;
   margin: 5% 0;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .name-ctn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .name-ctn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .name-ctn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .name-ctn {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .name-ctn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .name-ctn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .name-ctn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .name-ctn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2525,19 +2529,19 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
           justify-content: space-between;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .name-ctn .c-name,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .name-ctn .c-name,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .name-ctn .c-name,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .name-ctn .c-name {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .name-ctn .c-name,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .name-ctn .c-name,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .name-ctn .c-name,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .name-ctn .c-name {
   font-size: 1rem;
   font-weight: bold;
   color: black;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .name-ctn .c-price,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .name-ctn .c-price,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .name-ctn .c-price,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .name-ctn .c-price,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .name-ctn .c-price,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .name-ctn .c-price,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2546,19 +2550,19 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
           justify-content: space-between;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .name-ctn .c-price .price,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .name-ctn .c-price .price,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .name-ctn .c-price .price,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price .price {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .name-ctn .c-price .price,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .name-ctn .c-price .price,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .name-ctn .c-price .price,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price .price {
   color: #0d723b;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart-o {
   color: #0d723b;
   cursor: pointer;
   font-size: 25px;
@@ -2569,10 +2573,10 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   -o-transform: translate(12px, -12px);
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .name-ctn .c-price .favorite-btn .heart .fa-heart {
   color: #0d723b;
   cursor: pointer;
   font-size: 25px;
@@ -2583,18 +2587,18 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   -o-transform: translate(12px, -12px);
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .des-ctn p,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .des-ctn p,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .des-ctn p,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .des-ctn p {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .des-ctn p,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .des-ctn p,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .des-ctn p,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .des-ctn p {
   color: black;
   text-align: inherit;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content a.buy-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content a.buy-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content a.buy-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content a.buy-btn {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content a.buy-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content a.buy-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content a.buy-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content a.buy-btn {
   -webkit-transform: translate(80%, 24px);
           transform: translate(80%, 24px);
   margin: auto;
@@ -2605,18 +2609,18 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   background-color: #F9F9F9;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content a.buy-btn:hover,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content a.buy-btn:hover,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content a.buy-btn:hover,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content a.buy-btn:hover {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content a.buy-btn:hover,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content a.buy-btn:hover,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content a.buy-btn:hover,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content a.buy-btn:hover {
   background-color: #0d723b;
   color: white;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .pre-certi-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .pre-certi-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .pre-certi-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .pre-certi-btn {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .pre-certi-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .pre-certi-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .pre-certi-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .pre-certi-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2630,10 +2634,10 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   margin: 20px 0;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .pre-certi-btn a.pre-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .pre-certi-btn a.pre-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .pre-certi-btn a.pre-btn,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .pre-certi-btn a.pre-btn {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .pre-certi-btn a.pre-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .pre-certi-btn a.pre-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .pre-certi-btn a.pre-btn,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .pre-certi-btn a.pre-btn {
   margin: auto;
   left: 0;
   right: 0;
@@ -2642,16 +2646,16 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   background-color: #F9F9F9;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .other-item-content .pre-certi-btn a.pre-btn:hover,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course .certi-item-content .pre-certi-btn a.pre-btn:hover,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .other-item-content .pre-certi-btn a.pre-btn:hover,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi .certi-item-content .pre-certi-btn a.pre-btn:hover {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .other-item-content .pre-certi-btn a.pre-btn:hover,
+.course-total-wrapper .course-main-block .other-item-ctn .item-course .certi-item-content .pre-certi-btn a.pre-btn:hover,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .other-item-content .pre-certi-btn a.pre-btn:hover,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi .certi-item-content .pre-certi-btn a.pre-btn:hover {
   background-color: #0d723b;
   color: white;
 }
 
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-course:hover,
-.course-total-wrapper .course-main-block .panel-body .other-item-ctn .item-certi:hover {
+.course-total-wrapper .course-main-block .other-item-ctn .item-course:hover,
+.course-total-wrapper .course-main-block .other-item-ctn .item-certi:hover {
   -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
 }
@@ -3003,5 +3007,17 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   color: white;
   font-family: HKNova-Bold;
   border-color: #711212;
+}
+
+.enroll-section .enroll-wrapper .enrol-resource .colapse-title .left-title {
+  width: 50%;
+}
+
+.enroll-section .enroll-wrapper .enrol-resource .colapse-title .left-title .course-name {
+  width: 100%;
+}
+
+.enroll-section .enroll-wrapper .enrol-resource .colapse-title .left-title .course-name h5 {
+  border-right: none;
 }
 /*# sourceMappingURL=styles.css.map */

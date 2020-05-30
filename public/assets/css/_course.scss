@@ -1,307 +1,197 @@
 .course-total-wrapper {
     .course-main-block {
-        .colapse-title {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            .left-title {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-                .square-btn {
-                    font-size: 1.2rem;
-                    border-radius: 0px;
-                    -webkit-border-radius: 0px;
-                    -moz-border-radius: 0px;
-                    -ms-border-radius: 0px;
-                    -o-border-radius: 0px;
-                }
-                .course-name {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    background-color: $main-color;
-                    margin-right: 3px;
-                    .rating-score {
-                        display: flex;
-                        .total-scrore-rate {
-                            margin: auto;
-                            color: white;
-                            padding: 5px 10px;
-                            strong {
-                                font-size: 1.3rem;
-                            }
-                        }
-                    }
-                    h5 {
-                        font-size: 1.3rem;
-                        font-family: HKNova-Regular;
-                        color: white;
-                        margin: auto;
-                        padding: 5px 50px;
-                        border-right: 1px solid;
-                    }
-                }
-                .course-price-tag{
-                    h6{
-                        font-size: 1.3rem;
-                        font-family: HKNova-Regular;
-                        color: white;
-                        margin: auto 0;
-                        padding: 5px 50px;
-                        top: 0;
-                        bottom: 0;
-                        transform: translate(0px, 5px);
-                        -webkit-transform: translate(0px, 5px);
-                        -moz-transform: translate(0px, 5px);
-                        -ms-transform: translate(0px, 5px);
-                        -o-transform: translate(0px, 5px);
-}
-                }
-            }
-            .right-title {
+        .detail-ctn {
+            .main-img {
                 position: relative;
-                width: 40px;
-                height: 40px;
-                background-color: $main-color;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-                a {
-                    color: #bcbec0;
-                    &::after {
-                        position: absolute;
-                        top: 50%;
-                        right: 5px;
-                        width: 20px;
-                        height: 16px;
-                        margin-top: -10px;
-                        font: 18px fontawesome;
-                        content: "\f0d8";
-                        -webkit-transition: all .3s ease;
-                        transition: all .3s ease;
-                    }
-                }
-                .collapsed {
-                    &::after {
-                        transform: rotate(-180deg);
-                        position: absolute;
-                        top: 50%;
-                        right: 15px;
-                        width: 20px;
-                        height: 16px;
-                        margin-top: -5px;
-                        font: 18px fontawesome;
-                        content: "\f0d8";
-                    }
-                    a {}
-                }
-            }
-        }
-        .panel-heading {
-            margin: 3% 0;
-            .click {
-                a {
-                    color: #000;
-                }
-            }
-        }
-        .panel-body {
-            .detail-ctn {
-                .main-img {
-                    position: relative;
-                    overflow: hidden;
-                    .course_overlay {
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgba(10, 111, 27, 0.3);
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        // padding-top: 35%;
-                        opacity: 1;
-                        transition: all 0.2s;
-                        .overlay-ctn {
-                            // padding-top: 45%;
-                            // .all-rate-ctn {
-                            //     display: flex;
-                            //     justify-content: space-around;
-                            //     top: 0;
-                            //     bottom: 0;
-                            //     margin: auto;
-                            //     .total-scrore-rate {
-                            //         top: 0;
-                            //         bottom: 0;
-                            //         margin: auto;
-                            //         color: white;
-                            //         font-family: HKNova-Regular;
-                            //         strong {
-                            //             font-family: HKNova-Bold;
-                            //             font-size: 1.5rem;
-                            //         }
-                            //     }
-                            // }
-                            .course-total {
-                                color: #F4C150;
-                                font-family: HKNova-Bold;
-                                font-size: 1.7rem;
-                                padding-left: 25px;
-                                span.line-through {
-                                    text-decoration: line-through;
-                                    color: white;
-                                    font-size: 1.2rem;
-                                    font-family: HKNova-Regular;
-                                }
-                            }
-                            .buy-total {
-                                padding-left: 25px;
-                                margin-top: 20px;
-                            }
-                            .course_overlay a {
-                                font-size: 1.3rem;
+                overflow: hidden;
+                .course_overlay {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(10, 111, 27, 0.3);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    // padding-top: 35%;
+                    opacity: 1;
+                    transition: all 0.2s;
+                    .overlay-ctn {
+                        // padding-top: 45%;
+                        // .all-rate-ctn {
+                        //     display: flex;
+                        //     justify-content: space-around;
+                        //     top: 0;
+                        //     bottom: 0;
+                        //     margin: auto;
+                        //     .total-scrore-rate {
+                        //         top: 0;
+                        //         bottom: 0;
+                        //         margin: auto;
+                        //         color: white;
+                        //         font-family: HKNova-Regular;
+                        //         strong {
+                        //             font-family: HKNova-Bold;
+                        //             font-size: 1.5rem;
+                        //         }
+                        //     }
+                        // }
+                        .course-total {
+                            color: #F4C150;
+                            font-family: HKNova-Bold;
+                            font-size: 1.7rem;
+                            padding-left: 25px;
+                            span.line-through {
+                                text-decoration: line-through;
+                                color: white;
+                                font-size: 1.2rem;
+                                font-family: HKNova-Regular;
                             }
                         }
-                        a {
-                            // width:40px;
-                            // height: 40px;
-                            // line-height: 40px;
-                            margin: 0 auto;
-                            color: $main-color;
-                            border: 1px solid #fff;
-                            // border-radius: 50%;
-                            display: inline-block;
-                            font-size: 1rem;
-                            // bottom: -150px;
-                            position: relative;
-                            background-color: white;
+                        .buy-total {
+                            padding-left: 25px;
+                            margin-top: 20px;
+                        }
+                        .course_overlay a {
+                            font-size: 1.3rem;
                         }
                     }
-                    .course-price {
-                        font-size: 18px;
-                        color: #F4C150;
-                        font-family: HKNova-Bold;
-                    }
-                    .course-rate {
-                        width: 50%;
-                        transform: translateY(50%);
-                        top: 50%;
-                        position: absolute;
-                    }
-                }
-                .detail-content {
-                    margin: 2% 0;
-                    p {
-                        font-family: HKNova-Regular;
-                    }
-                }
-            }
-            .other-item-ctn {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                .item-course,
-                .item-certi {
-                    background-color: white;
-                    margin-bottom: 50px;
-                    .other-item-content,
-                    .certi-item-content {
-                        padding: 10px;
+                    a {
+                        // width:40px;
+                        // height: 40px;
+                        // line-height: 40px;
+                        margin: 0 auto;
+                        color: $main-color;
+                        border: 1px solid #fff;
+                        // border-radius: 50%;
+                        display: inline-block;
+                        font-size: 1rem;
+                        // bottom: -150px;
                         position: relative;
-                        margin: 5% 0;
-                        .name-ctn {
+                        background-color: white;
+                    }
+                }
+                .course-price {
+                    font-size: 18px;
+                    color: #F4C150;
+                    font-family: HKNova-Bold;
+                }
+                .course-rate {
+                    width: 50%;
+                    transform: translateY(50%);
+                    top: 50%;
+                    position: absolute;
+                }
+            }
+            .detail-content {
+                margin: 2% 0;
+                p {
+                    font-family: HKNova-Regular;
+                }
+            }
+        }
+        .other-item-ctn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .item-course,
+            .item-certi {
+                background-color: white;
+                margin-bottom: 50px;
+                .other-item-content,
+                .certi-item-content {
+                    padding: 10px;
+                    position: relative;
+                    margin: 5% 0;
+                    .name-ctn {
+                        display: flex;
+                        justify-content: space-between;
+                        .c-name {
+                            font-size: 1rem;
+                            font-weight: bold;
+                            color: black;
+                        }
+                        .c-price {
                             display: flex;
                             justify-content: space-between;
-                            .c-name {
-                                font-size: 1rem;
+                            .price {
+                                color: $main-color;
+                                font-size: 1.2rem;
                                 font-weight: bold;
-                                color: black;
                             }
-                            .c-price {
-                                display: flex;
-                                justify-content: space-between;
-                                .price {
-                                    color: $main-color;
-                                    font-size: 1.2rem;
-                                    font-weight: bold;
-                                }
-                                .favorite-btn {
-                                    .heart {
-                                        .fa-heart-o {
-                                            color: $main-color;
-                                            cursor: pointer;
-                                            font-size: 25px;
-                                            transform: translate(12px, -12px);
-                                            -webkit-transform: translate(12px, -12px);
-                                            -moz-transform: translate(12px, -12px);
-                                            -ms-transform: translate(12px, -12px);
-                                            -o-transform: translate(12px, -12px);
-                                        }
-                                        .fa-heart {
-                                            color: $main-color;
-                                            cursor: pointer;
-                                            font-size: 25px;
-                                            transform: translate(12px, -12px);
-                                            -webkit-transform: translate(12px, -12px);
-                                            -moz-transform: translate(12px, -12px);
-                                            -ms-transform: translate(12px, -12px);
-                                            -o-transform: translate(12px, -12px);
-                                        }
+                            .favorite-btn {
+                                .heart {
+                                    .fa-heart-o {
+                                        color: $main-color;
+                                        cursor: pointer;
+                                        font-size: 25px;
+                                        transform: translate(12px, -12px);
+                                        -webkit-transform: translate(12px, -12px);
+                                        -moz-transform: translate(12px, -12px);
+                                        -ms-transform: translate(12px, -12px);
+                                        -o-transform: translate(12px, -12px);
+                                    }
+                                    .fa-heart {
+                                        color: $main-color;
+                                        cursor: pointer;
+                                        font-size: 25px;
+                                        transform: translate(12px, -12px);
+                                        -webkit-transform: translate(12px, -12px);
+                                        -moz-transform: translate(12px, -12px);
+                                        -ms-transform: translate(12px, -12px);
+                                        -o-transform: translate(12px, -12px);
                                     }
                                 }
                             }
                         }
-                        .des-ctn {
-                            p {
-                                color: black;
-                                text-align: inherit;
-                            }
+                    }
+                    .des-ctn {
+                        p {
+                            color: black;
+                            text-align: inherit;
                         }
-                        a.buy-btn {
-                            transform: translate(80%, 24px);
+                    }
+                    a.buy-btn {
+                        transform: translate(80%, 24px);
+                        margin: auto;
+                        left: 0;
+                        right: 0;
+                        position: relative;
+                        padding: 7px 32px;
+                        background-color: #F9F9F9;
+                        &:hover {
+                            background-color: $main-color;
+                            color: white;
+                        }
+                    }
+                    .pre-certi-btn {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        margin: 20px 0;
+                        a.pre-btn {
+                            // transform: translate(0%, 24px);
                             margin: auto;
                             left: 0;
                             right: 0;
                             position: relative;
-                            padding: 7px 32px;
+                            padding: 7px 18px;
                             background-color: #F9F9F9;
                             &:hover {
                                 background-color: $main-color;
                                 color: white;
                             }
                         }
-                        .pre-certi-btn {
-                            display: flex;
-                            justify-content: space-between;
-                            flex-direction: row;
-                            margin: 20px 0;
-                            a.pre-btn {
-                                // transform: translate(0%, 24px);
-                                margin: auto;
-                                left: 0;
-                                right: 0;
-                                position: relative;
-                                padding: 7px 18px;
-                                background-color: #F9F9F9;
-                                &:hover {
-                                    background-color: $main-color;
-                                    color: white;
-                                }
-                            }
-                        }
-                    }
-                    &:hover {
-                        -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
-                        -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
-                        box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
                     }
                 }
-                .item-certi {
-                    .certi-item-content {
-                        .name-ctn {
-                            .c-name {}
-                        }
+                &:hover {
+                    -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                    -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                }
+            }
+            .item-certi {
+                .certi-item-content {
+                    .name-ctn {
+                        .c-name {}
                     }
                 }
             }

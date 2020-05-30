@@ -608,6 +608,122 @@ footer {
     }
 }
 
+//============================panel colapse ====================
+.panel-group{
+    width: 100%;
+}
+.colapse-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .left-title {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .square-btn {
+            font-size: 1.2rem;
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -ms-border-radius: 0px;
+            -o-border-radius: 0px;
+        }
+        .course-name {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            background-color: $main-color;
+            margin-right: 3px;
+            .rating-score {
+                display: flex;
+                .total-scrore-rate {
+                    margin: auto;
+                    color: white;
+                    padding: 5px 10px;
+                    strong {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            h5 {
+                font-size: 1.3rem;
+                font-family: HKNova-Regular;
+                color: white;
+                margin: auto;
+                padding: 5px 50px;
+                border-right: 1px solid;
+            }
+        }
+        .course-price-tag{
+            h6{
+                font-size: 1.3rem;
+                font-family: HKNova-Regular;
+                color: white;
+                margin: auto 0;
+                padding: 5px 50px;
+                top: 0;
+                bottom: 0;
+                transform: translate(0px, 5px);
+                -webkit-transform: translate(0px, 5px);
+                -moz-transform: translate(0px, 5px);
+                -ms-transform: translate(0px, 5px);
+                -o-transform: translate(0px, 5px);
+            }
+        }
+    }
+    .right-title {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: $main-color;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        a {
+            color: #bcbec0;
+            &::after {
+                position: absolute;
+                top: 50%;
+                right: 5px;
+                width: 20px;
+                height: 16px;
+                margin-top: -10px;
+                font: 18px fontawesome;
+                content: "\f0d8";
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+        }
+        .collapsed {
+            &::after {
+                transform: rotate(-180deg);
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                width: 20px;
+                height: 16px;
+                margin-top: -5px;
+                font: 18px fontawesome;
+                content: "\f0d8";
+            }
+            a {}
+        }
+    }
+}
+.panel-heading {
+    margin: 3% 0;
+    .click {
+        a {
+            color: #000;
+        }
+    }
+}
+.panel-body {
+   
+}
+
 // ===========================modal==============================
 .modal {
     height: 370px;
