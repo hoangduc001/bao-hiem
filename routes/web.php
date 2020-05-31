@@ -21,6 +21,10 @@ Route::get('/course-detail', function () {
 Route::get('/courses', function () {
     return view('frontend.pages.courses');
 });
+
+Route::get('/learning', function () {
+    return view('frontend.pages.learning');
+});
 //=================luyện thi==================
 Route::get('/pre-certi', function () {
     return view('frontend.pages.pre-certi');
