@@ -415,100 +415,100 @@ Button
     -o-border-radius: 0px;
 }
 /* 
-        * PAGINATION
-        */
-        /* alignment wrapper */
-        /* centering */
-        /* active item; create circle using pseudo element */
-        /* active item; create circle without pseudo element */
-        .pagination-container {
-            display: block;
-        }
-        .pagination-container {
-            text-align: center;
-        }
-        .pagination {
-            display: inline-flex;
-            list-style: none;
-            padding-left: unset;
-            a.next-chap{
-                width:120px;
-                padding: 5px;
-            }
-            a.prev-chap{
-                width:120px;
-                padding: 5px;
-                
-            }
-            .mdc-icon-button {
+* PAGINATION
+*/
+/* alignment wrapper */
+/* centering */
+/* active item; create circle using pseudo element */
+/* active item; create circle without pseudo element */
+.pagination-container {
+    display: block;
+}
+.pagination-container {
+    text-align: center;
+}
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding-left: unset;
+    a.next-chap{
+        width:120px;
+        padding: 5px;
+    }
+    a.prev-chap{
+        width:120px;
+        padding: 5px;
+        
+    }
+    .mdc-icon-button {
 
-                .icon-text {
-                    font-family: HKNova-Regular;
-                    color: #000;
-                    font-size: 13px;
-                    padding: 4px;
-                    display: inline-block;
-                    width: 30px;
-                    height: 30px;
-                    text-align: center;
-                    vertical-align: center;
-                    z-index: 2;
-                    border: 1px solid $main-color;
-                    margin: 0 5px;
-                    border-radius: 50%;
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
-                    -ms-border-radius: 50%;
-                    -o-border-radius: 50%;
-                }
-            }
-            .mdc-icon-button.active {
-                .icon-text {
-                    color: #ffffff;
-                    position: relative;
-                    &:after {
-                        content: "";
-                        border-radius: 50%;
-                        background-color: $main-color;
-                        width: 30px;
-                        height: 30px;
-                        top: 0px;
-                        left: 0px;
-                        position: absolute;
-                        z-index: -1;
-                    }
-                }
-                pointer-events: none;
-                cursor: not-allowed;
-            }
-            .mdc-icon-button.active2 {
-                .icon-text {
-                    color: #ffffff;
-                    color: #ffffff;
-                    background-color: #006400;
-                    border-radius: 50%;
-                    width: 32px;
-                    height: 32px;
-                    line-height: 32px;
-                }
-                padding: 8px;
-                pointer-events: none;
-                cursor: not-allowed;
-            }
-            .disabled {
-                pointer-events: none;
-                cursor: not-allowed;
-                color: #00000057;
-                .icon-text{
-                border: none;
-                border-radius: 0px;
-                -webkit-border-radius: 0px;
-                -moz-border-radius: 0px;
-                -ms-border-radius: 0px;
-                -o-border-radius: 0px;
-                }
+        .icon-text {
+            font-family: HKNova-Regular;
+            color: #000;
+            font-size: 13px;
+            padding: 4px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            z-index: 2;
+            border: 1px solid $main-color;
+            margin: 0 5px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    .mdc-icon-button.active {
+        .icon-text {
+            color: #ffffff;
+            position: relative;
+            &:after {
+                content: "";
+                border-radius: 50%;
+                background-color: $main-color;
+                width: 30px;
+                height: 30px;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                z-index: -1;
             }
         }
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+    .mdc-icon-button.active2 {
+        .icon-text {
+            color: #ffffff;
+            color: #ffffff;
+            background-color: #006400;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+        }
+        padding: 8px;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+    .disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        color: #00000057;
+        .icon-text{
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        }
+    }
+}
 .btn-default:hover {
     color: #fff;
     background-color: $main-color;

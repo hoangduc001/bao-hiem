@@ -236,38 +236,6 @@
                 });
             });
         };
-        // =======================filter muc do de=================================
-        
-        // var selectedClass = "";
-		// $("a").click(function(){
-        //     event.preventDefault()
-		//     selectedClass = $(this).attr("data-rel");
-        //     $("#subject-test").fadeTo(100, 0.1);
-		//     $("#subject-test div.col-3").not("."+selectedClass).fadeOut();
-        //     setTimeout(function() {
-        //     $("."+selectedClass).fadeIn();
-        //     $("#subject-test").fadeTo(500, 1);
-        //     }, 500);
-		
-        // });
-
-        $('.filters ul li').click(function(){
-            $('.filters ul li').removeClass('active');
-            $(this).addClass('active');
-            
-            var data = $(this).attr('data-filter');
-            $grid.isotope({
-              filter: data
-            })
-          });
-          
-          var $grid = $(".grid").isotope({
-            itemSelector: ".all",
-            percentPosition: true,
-            masonry: {
-              columnWidth: ".all"
-            }
-          })
         // ===============Heart-like========================
         $(".heart").click(function(){
             if($(".heart").hasClass("liked")){
@@ -278,49 +246,48 @@
               $(".heart").addClass("liked");
             }
         });
-        // =====================easyResponsiveTab=================
-         //Horizontal Tab
-        $('#parentHorizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#nested-tabInfo');
-                var $name = $('span', $info);
-                $name.text($tab.text());
-                $info.show();
+        //================Vertical Tab======================
+        $('li').click(function(event) {
+            event.preventDefault();
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+          
+            var ph = $(this).parent().height();
+            var ch = $(this).next().height();
+          
+            if (ch > ph) {
+              $(this).parent().css({
+                'min-height': ch + 'px'
+              });
+            } else {
+              $(this).parent().css({
+                'height': 'auto'
+              });
             }
-        });
-
-        // Child Tab
-        $('#ChildVerticalTab_1').easyResponsiveTabs({
-            type: 'vertical',
-            width: 'auto',
-            fit: true,
-            tabidentify: 'ver_1', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-
-        //Vertical Tab
-        $('#parentVerticalTab').easyResponsiveTabs({
-            type: 'vertical', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#nested-tabInfo2');
-                var $name = $('span', $info);
-                $name.text($tab.text());
-                $info.show();
+          });
+          
+          function tabParentHeight() {
+            var ph = $('.v-tab-ctn').height();
+            var ch = $('.v-tab-ctn div.tab-pane').height();
+            if (ch > ph) {
+              $('.v-tab-ctn').css({
+                'height': ch + 'px'
+              });
+            } else {
+              $(this).parent().css({
+                'height': 'auto'
+              });
             }
-        });
+          }
+          
+          $(window).resize(function() {
+            tabParentHeight();
+          });
+          
+          $(document).resize(function() {
+            tabParentHeight();
+          });
+          tabParentHeight();
         // ===============Dropdown check====================
         var CheckboxDropdown = function(el) {
             var _this = this;

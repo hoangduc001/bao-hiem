@@ -72,7 +72,7 @@
                             <div class="user-action">
                                 <div class="sign-inup">
                                     <a href="" class="btn btn-default sign ">Đăng nhập</a>
-                                    <a href="" class="btn btn-default sign ">Đăng kí</a>
+                                    <a href="#ex2" class="btn btn-default sign " rel="modal:open">Đăng kí</a>
                                 </div>
                             </div>
                             
@@ -162,11 +162,25 @@
 <!-- Menu -->
 <div class="body-page">
     <div class="page-wrapper">
-    @include('frontend/pages/section1')
+        @include('frontend/pages/section1')
         @yield('content')
     </div>
     <!-- Back to top -->
     <a class="scrollup"></a>
+    <!-- modal login -->
+    <div id="ex2" class="modal">
+    <div class="modal-wrapper modal-transition">
+        <div class="modal-header">
+            <h2 class="modal-heading">This is a modal</h2>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <img class="img-fluid" src="{{ url('/') }}/assets/images/news/new.png?{{ config('custom.version') }}" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eum delectus, libero, accusantium dolores inventore obcaecati placeat cum sapiente vel laboriosam similique totam id ducimus aperiam, ratione fuga blanditiis maiores.</p>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <footer>
     <div class="footer-ctn">
@@ -245,21 +259,21 @@
 
     @yield('footer')
     <script src="{{ url('assets/lib/jqueryModal/js/jquery.modal.min.js?'.config('custom.version')) }}"></script>
-<script>
-    // ------------------------------------------------------------------------------ //
-            // Toggle Search
-            // ------------------------------------------------------------------------------ //
-            $(" .attr-nav").each(function(){  
-                $("li.search > a", this).on("click", function(e){
-                    e.preventDefault();
-                    $(".top-search").slideToggle();
+    <script>
+        // ------------------------------------------------------------------------------ //
+                // Toggle Search
+        // ------------------------------------------------------------------------------ //
+                $(" .attr-nav").each(function(){  
+                    $("li.search > a", this).on("click", function(e){
+                        e.preventDefault();
+                        $(".top-search").slideToggle();
+                    });
                 });
-            });
-            $(".input-group-addon.close-search").on("click", function(){
-                $(".top-search").slideUp();
-            });
-            
-</script>
+                $(".input-group-addon.close-search").on("click", function(){
+                    $(".top-search").slideUp();
+                });
+                
+    </script>
     <script>
         $(document).ready(function(){
             // $.ui.menu.init();

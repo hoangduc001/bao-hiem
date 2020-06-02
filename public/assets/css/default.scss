@@ -725,13 +725,16 @@ footer {
 }
 
 // ===========================modal==============================
+.blocker{
+    z-index: 999;
+}
 .modal {
-    height: 370px;
+    height: auto;
     background-color: #0d723b;
     color: #fff;
     // overflow-y: auto;
     a {
-        color: #f36f21;
+        color: #000;
         float: right;
         font-family: HKNova-Regular;
         text-transform: uppercase;
@@ -839,7 +842,7 @@ footer {
     }
     .cd-breadcrumb li,
     .cd-multi-steps li {
-        display: inline-block;
+        display: block;
         float: left;
         margin: 0.5em 0;
     }

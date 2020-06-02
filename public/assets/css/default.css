@@ -806,14 +806,18 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
   color: #000;
 }
 
+.blocker {
+  z-index: 999;
+}
+
 .modal {
-  height: 370px;
+  height: auto;
   background-color: #0d723b;
   color: #fff;
 }
 
 .modal a {
-  color: #f36f21;
+  color: #000;
   float: right;
   font-family: HKNova-Regular;
   text-transform: uppercase;
@@ -931,7 +935,7 @@ footer .footer-ctn .footer-text-right .footer-content .app-download {
 
 .breadcum-ctn .cd-breadcrumb li,
 .breadcum-ctn .cd-multi-steps li {
-  display: inline-block;
+  display: block;
   float: left;
   margin: 0.5em 0;
 }

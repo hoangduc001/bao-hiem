@@ -36,6 +36,9 @@ Route::get('/test-list', function () {
 Route::get('/enroll', function () {
     return view('frontend.pages.enroll');
 });
+Route::get('/profile-user', function () {
+    return view('frontend.pages.profile');
+});
 Auth::routes();
 
 Route::get('/profile', 'UsersController@index')->name('profile');
