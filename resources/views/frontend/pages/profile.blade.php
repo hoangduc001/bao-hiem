@@ -75,61 +75,152 @@
                                                 <div class="form_wrapper">
                                                     <div class="form_container">
                                                         <div class="row clearfix">
-                                                            <div class="">
-                                                                <form>
-                                                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-                                                                        <input type="email" name="email" placeholder="Email" required />
+                                                            <div class="upload-ctn">
+                                                                <div class="avatar-wrapper">
+                                                                    <img class="profile-pic" src="" />
+                                                                    <div class="upload-button">
+                                                                        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
                                                                     </div>
-                                                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                                                                        <input type="password" name="password" placeholder="Password" required />
-                                                                    </div>
-                                                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                                                                        <input type="password" name="password" placeholder="Re-type Password" required />
-                                                                    </div>
-                                                                    <div class="row clearfix">
-                                                                        <div class="col_half">
-                                                                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                                                                                <input type="text" name="name" placeholder="First Name" />
+                                                                    <input class="file-upload" type="file" accept="image/*"/>
+                                                                </div>
+                                                                <div class="profile-form">
+                                                                    <div class="col-md-12">
+                                                                        <form>
+                                                                            <div class="row clearfix">
+                                                                                <div class="col_half">
+                                                                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                                                                        <input type="text" name="name" placeholder="First Name" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col_half">
+                                                                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                                                                        <input type="text" name="name" placeholder="Last Name" required />
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
+                                                                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-calendar-o"></i></span>
+                                                                                <input type="date" name="birth" placeholder="Date of birth" />
                                                                             </div>
-                                                                            <div class="col_half">
-                                                                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                                                                                <input type="text" name="name" placeholder="Last Name" required />
+                                                                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+                                                                                <input type="phone" name="phone" placeholder="Phone" required />
                                                                             </div>
-                                                                        </div>
+                                                                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                                                                                <input type="email" name="email" placeholder="Email" required />
+                                                                            </div>
+                                                                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                                                                <input type="password" name="password" placeholder="Password" required />
+                                                                            </div>
+                                                                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                                                                <input type="password" name="password" placeholder="Re-type Password" required />
+                                                                            </div>
+                                                                            
+                                                                            <div class="input_field radio_option">
+                                                                                <input type="radio" name="radiogroup1" id="rd1">
+                                                                                <label for="rd1">Male</label>
+                                                                                <input type="radio" name="radiogroup1" id="rd2">
+                                                                                <label for="rd2">Female</label>
+                                                                            </div>
+                                                                            <input class="button" type="submit" value="Save" />
+                                                                        </form>
                                                                     </div>
-                                                                    <div class="input_field radio_option">
-                                                                        <input type="radio" name="radiogroup1" id="rd1">
-                                                                        <label for="rd1">Male</label>
-                                                                        <input type="radio" name="radiogroup1" id="rd2">
-                                                                        <label for="rd2">Female</label>
-                                                                    </div>
-                                                                    <div class="input_field select_option">
-                                                                        <select>
-                                                                        <option>Select a country</option>
-                                                                        <option>Option 1</option>
-                                                                        <option>Option 2</option>
-                                                                        </select>
-                                                                        <div class="select_arrow"></div>
-                                                                    </div>
-                                                                    <div class="input_field checkbox_option">
-                                                                        <input type="checkbox" id="cb1">
-                                                                        <label for="cb1">I agree with terms and conditions</label>
-                                                                    </div>
-                                                                    <div class="input_field checkbox_option">
-                                                                        <input type="checkbox" id="cb2">
-                                                                        <label for="cb2">I want to receive the newsletter</label>
-                                                                    </div>
-                                                                    <input class="button" type="submit" value="Register" />
-                                                                </form>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="course-info" role="tabpanel" aria-labelledby="course-tab">
-                                                <h2>course-info</h2>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                                                <div class="my-course-ctn">
+                                                    <div class="row">
+                                                        <div class="join-course-ctn col-12">
+                                                            <div class="join-item">
+                                                                <div class="left-ctn col-5">
+                                                                    <img src="{{ url('/') }}/assets/images/course/join.png?{{ config('custom.version') }}" alt="">
+                                                                </div>
+                                                                <div class="right-ctn col-7">
+                                                                    <div class="title-ctn">
+                                                                        <h5>khóa học phụ trợ bảo hiểm</h5>
+                                                                    </div>
+                                                                    <div class="period">
+                                                                        <a href="#"> Bài 1. Mở đầu về khóa học</a>  
+                                                                    </div>
+                                                                    <div class="tutor">
+                                                                    <a href="#"> Th.s Nguyễn Mai Anh</a>
+                                                                    </div>
+                                                                    <div class="progress-bar-ctn">
+                                                                        <p style="width:80%" data-value="80"></p>
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar progress-green" style="width: 50%">50%</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="btn-cont">
+                                                                        <a href="#" class="btn btn-default btn-enroll btn-enroll-test">Tiếp tục học</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="join-item">
+                                                                <div class="left-ctn col-5">
+                                                                    <img src="{{ url('/') }}/assets/images/course/join.png?{{ config('custom.version') }}" alt="">
+                                                                </div>
+                                                                <div class="right-ctn col-7">
+                                                                    <div class="title-ctn">
+                                                                        <h5>khóa học phụ trợ bảo hiểm</h5>
+                                                                    </div>
+                                                                    <div class="period">
+                                                                        <a href="#"> Bài 1. Mở đầu về khóa học</a>  
+                                                                    </div>
+                                                                    <div class="tutor">
+                                                                    <a href="#"> Th.s Nguyễn Mai Anh</a>
+                                                                    </div>
+                                                                    <div class="progress-bar-ctn">
+                                                                        <p style="width:80%" data-value="80"></p>
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar progress-green" style="width: 50%">50%</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="btn-cont">
+                                                                        <a href="#" class="btn btn-default btn-enroll btn-enroll-test">Tiếp tục học</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bought-course-ctn ">
+                                                            <div class="bought-wrapper ">
+                                                                <div class="bought-item ">
+                                                                    <div class="img-ctn">
+                                                                        <img src="{{ url('/') }}/assets/images/course/join.png?{{ config('custom.version') }}" alt="">
+                                                                    </div>
+                                                                    <div class="title-ctn">
+                                                                        <h5>khóa học phụ trợ bảo hiểm</h5>
+                                                                    </div>
+                                                                    <div class="tutor">
+                                                                        <a href="#"> Th.s Nguyễn Mai Anh</a>
+                                                                    </div>
+                                                                    <div class="btn-cont">
+                                                                        <a href="#" class="btn btn-default btn-enroll btn-enroll-test">Vào học</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="bought-item ">
+                                                                    <div class="img-ctn">
+                                                                        <img src="{{ url('/') }}/assets/images/course/join.png?{{ config('custom.version') }}" alt="">
+                                                                    </div>
+                                                                    <div class="title-ctn">
+                                                                        <h5>khóa học phụ trợ bảo hiểm</h5>
+                                                                    </div>
+                                                                    <div class="tutor">
+                                                                        <a href="#"> Th.s Nguyễn Mai Anh</a>
+                                                                    </div>
+                                                                    <div class="btn-cont">
+                                                                        <a href="#" class="btn btn-default btn-enroll btn-enroll-test">Vào học</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="exam-info" role="tabpanel" aria-labelledby="exam-tab">
                                                 <h2>exam-info</h2>
@@ -159,9 +250,35 @@
         </div>
     </section>
 </div>
+<script>
+    $(document).ready(function() {
+	
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.profile-pic').attr('src', e.target.result);
+                console.log('hhh',e.target.result)
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+   
+    $(".file-upload").on('change', function(){
+        readURL(this);
+
+    });
+    
+    $(".upload-button").on('click', function() {
+       $(".file-upload").click();
+    });
+});
+</script>
 @stop
 
 @section('footer')
-    <script src="{{ url('assets/js/info.js?'.config('custom.version')) }}"></script>
+    <!-- <script src="{{ url('assets/js/info.js?'.config('custom.version')) }}"></script> -->
 
 @stop

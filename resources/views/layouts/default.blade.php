@@ -72,7 +72,7 @@
                             <div class="user-action">
                                 <div class="sign-inup">
                                     <a href="" class="btn btn-default sign ">Đăng nhập</a>
-                                    <a href="#ex2" class="btn btn-default sign " rel="modal:open">Đăng kí</a>
+                                    <a href="{{ url('/signin') }}" class="btn btn-default sign ">Đăng kí</a>
                                 </div>
                             </div>
                             
@@ -171,12 +171,11 @@
     <div id="ex2" class="modal">
     <div class="modal-wrapper modal-transition">
         <div class="modal-header">
-            <h2 class="modal-heading">This is a modal</h2>
+            <h2 class="modal-heading">Đăng kí</h2>
         </div>
         <div class="modal-body">
             <div class="modal-content">
-                <img class="img-fluid" src="{{ url('/') }}/assets/images/news/new.png?{{ config('custom.version') }}" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eum delectus, libero, accusantium dolores inventore obcaecati placeat cum sapiente vel laboriosam similique totam id ducimus aperiam, ratione fuga blanditiis maiores.</p>
+               
             </div>
         </div>
     </div>

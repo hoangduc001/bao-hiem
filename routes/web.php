@@ -39,6 +39,10 @@ Route::get('/enroll', function () {
 Route::get('/profile-user', function () {
     return view('frontend.pages.profile');
 });
+// ========================signi-out======================
+Route::get('/signin', function () {
+    return view('frontend.pages.signin');
+});
 Auth::routes();
 
 Route::get('/profile', 'UsersController@index')->name('profile');
