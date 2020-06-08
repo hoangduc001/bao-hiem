@@ -1,0 +1,404 @@
+.course-wrapper {
+    .section-course {
+        .content-course-wrapper {
+            display: grid;
+            grid-template-columns: 39% 58%;
+            grid-gap: 3%;
+            padding: 20px;
+            .course-img-ctn {
+                position: relative;
+                overflow: hidden;
+                .course_overlay {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(10, 111, 27, 0.6);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    // padding-top: 35%;
+                    opacity: 0;
+                    transition: all 0.2s;
+                    .overlay-ctn {
+                        padding-top: 45%;
+                    }
+                    a {
+                        // width:40px;
+                        // height: 40px;
+                        // line-height: 40px;
+                        margin: 0 auto;
+                        color: $main-color;
+                        border: 1px solid #fff;
+                        // border-radius: 50%;
+                        display: inline-block;
+                        font-size: 1rem;
+                        bottom: -150px;
+                        position: relative;
+                        background-color: white;
+                    }
+                }
+                .course-price {
+                    font-size: 18px;
+                    color: #F4C150;
+                    font-family: HKNova-Bold;
+                }
+                &:hover {
+                    .course_overlay {
+                        opacity: 1;
+                        a {
+                            bottom: -10px;
+                        }
+                    }
+                }
+                .course-rate {
+                    .rate-star #half-stars .rating__label {
+                        font-size: 2.3rem;
+                    }
+                    .all-rate-ctn {
+                        display: flex;
+                    }
+                }
+            }
+            .left-side-title {
+                margin: 15px 0;
+                h3 {
+                    color: $main-color;
+                    font-size: 2rem;
+                }
+                h6 {
+                    font-size: 1rem;
+                    font-family: HKNova-Regular;
+                }
+            }
+            .left-course {
+                img {
+                    width: 100%;
+                }
+                .fa-heart-o,
+                .fa-heart {
+                    font-size: 2.3rem;
+                }
+                .all-rate-ctn {
+                    display: flex;
+                    justify-content: space-around;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    .total-scrore-rate {
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        color: white;
+                        font-family: HKNova-Regular;
+                        strong {
+                            font-family: HKNova-Bold;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .course-total {
+                    color: #F4C150;
+                    font-family: HKNova-Bold;
+                    font-size: 1.7rem;
+                    padding-left: 25px;
+                    span.line-through {
+                        text-decoration: line-through;
+                        color: white;
+                        font-size: 1.2rem;
+                        font-family: HKNova-Regular;
+                    }
+                }
+                .buy-total {
+                    padding-left: 25px;
+                }
+                .course_overlay a {
+                    font-size: 1.3rem;
+                }
+            }
+            .right-course {
+                .right-course-ctn {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    grid-gap: 20px;
+                    .course-item {
+                        img {
+                            width: 100%;
+                        }
+                        .head-title {
+                            h5 {
+                                padding-top: 20px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .watch-more-cnt {
+                    right: 0;
+                    float: right;
+                    a {
+                        color: $main-color;
+                        float: right;
+                        margin: 15px 0;
+                        text-decoration: underline;
+                        font-size: 1rem;
+                        font-family: HKNova-Bold;
+                    }
+                }
+            }
+        }
+        .swiper-course {
+            margin: 40px;
+            background-color: white;
+        }
+    }
+}
+
+// =========================pre-certificate======================
+.certificate-wrapper {
+    padding: 5% 0;
+    background-color: white;
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: $main-color;
+        font-family: HKNova-Bold;
+        background-color: transparent;
+        border-color: transparent transparent #f3f3f3;
+        border-bottom: 4px solid $main-color !important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .nav-tabs .nav-link {
+        font-family: HKNova-Regular;
+        border: 1px solid transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        color: #000;
+        font-size: 20px;
+    }
+    .nav-tabs {
+        // background-color: $main-color;
+    }
+    .pre-certi-ctn {
+        overflow-x: hidden;
+        /* Tabs*/
+        section {
+            padding: 60px 0;
+            .section-title {
+                text-align: center;
+                color: #007b5e;
+                margin-bottom: 50px;
+                text-transform: uppercase;
+            }
+        }
+        #tabs {
+            color: #58595b;
+            background-color: white;
+            h6.section-title {
+                color: #000;
+            }
+        }
+        .tab-ctn {
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-between;
+            grid-gap: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img {
+                width: 100%;
+                padding-bottom: 20px;
+            }
+            .certi-item {
+                padding: 15px;
+                background-color: #F6F6F6;
+                border: 1px solid $main-color;
+                .name-certi {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                .price-certi {
+                    color: $main-color;
+                    font-weight: bold;
+                }
+                .btn-ctn {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                }
+                &:hover {
+                    -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                    -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+                }
+            }
+        }
+        .watch-more-cnt {
+            right: 0;
+            a {
+                color: $main-color;
+                float: right;
+                margin: 15px 0;
+                font-size: 1.4rem;
+            }
+        }
+        .certi-ctn {}
+        .agency-ctn {}
+    }
+}
+
+// ===========================reason==============================
+.reason-wrapper {
+    padding: 5% 0;
+    .reason-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        margin-bottom: 25px;
+        img {
+            padding-right: 20px;
+        }
+        .item-content {
+            .right-reason-ctn {
+                padding: 20px;
+                .reason-title {
+                    h5 {
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+                }
+                .watch-more-cnt {
+                    a {
+                        right: 0;
+                        float: right;
+                        color: $main-color;
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// =======================Customer================================
+.customer-wrapper {
+    padding: 5% 0;
+    background-color: white;
+    .customer-content {
+        padding: 10% 0;
+        margin-bottom: 10%;
+        text-align: center;
+        img {
+            width: 130px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        .customer-name {
+            h5 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        .customer-cmt {
+            p {
+                position: relative;
+            }
+        }
+    }
+}
+
+// =========================Teacher============================
+.teacher-wrapper {
+    padding: 5% 0;
+    background-color: #F6F6F6;
+    .teacher-item {
+        padding: 10% 0px;
+        background-color: white;
+        margin: 6% 0;
+        padding: 15px;
+        border: 1px solid $main-color;
+        border-radius: 20px;
+        img {
+            width: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        .top-part {
+            display: flex;
+            // justify-content: space-around;
+            flex-direction: row;
+            .right-top-part {
+                display: block;
+                width: 100%;
+                .right-top {
+                    width: 100%;
+                    border-bottom: 2px solid $main-color;
+                    height: 75px;
+                    .teacher-name {
+                        padding-left: 20px;
+                    }
+                }
+                .right-bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    padding-left: 20px;
+                    .num-course {
+                        h4 {
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ======================News==================================
+.news-wrapper {
+    padding: 5% 0;
+    .news-container {
+        display: flex;
+        .new-item {
+            img {
+                border: 1px solid $main-color;
+            }
+            .item-ctn {
+                padding: 15px;
+                background-color: white;
+                border-right: 1px solid $main-color;
+                border-left: 1px solid $main-color;
+                border-bottom: 1px solid $main-color;
+                .new-title {
+                    h5 {
+                        font-weight: bold;
+                        padding-bottom: 5px;
+                    }
+                }
+                .new-date {
+                    padding: 10px 0;
+                    i {
+                        color: $main-color;
+                    }
+                    a {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    .watch-more-news {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
