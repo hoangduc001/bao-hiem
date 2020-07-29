@@ -1,0 +1,168 @@
+.list-teacher-wrapper {
+    background-color: #F6F6F6;
+    .list-teacher-ctn {
+        margin: 5% 0;
+    }
+    .pagin-section {
+        margin: 5%;
+        float: right;
+        position: relative;
+    }
+}
+
+.list-teacher-item {
+    margin-bottom: 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.28);
+    .teacher-img {
+        position: relative;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        .overlay-logo {
+            &::before {
+                content: "";
+                position: absolute;
+                background: url(../images/home/logo.png);
+                width: 50px;
+                height: 50px;
+                top: 4%;
+                left: 4%;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .detail {
+        margin: 15px;
+        padding-bottom: 15px;
+        font-family: HKNova-Regular;
+        .teacher-name {
+            h5 {
+                font-family: HKNova-Bold;
+                font-size: 1rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+            }
+        }
+        .review {
+            flex: 1;
+            min-width: 0;
+            /* or some value */
+            p {
+                font-size: 14px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+            }
+        }
+        .section-detail {
+            text-align: right;
+            margin: 15px 0;
+            a {
+                position: relative;
+                color: $main-color;
+                font-size: 1rem;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 6px;
+                    transform: translate(-62px, 10px);
+                    background-color: $main-color;
+                    text-align: left;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+// ====================calendar-page==========================
+.calender-wrapper {
+    .calender-ctn {
+        margin: 5% 0;
+        .main-wrapper {
+            .calendar-item {
+                position: relative;
+                box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.28);
+                margin: 30px 0;
+                img {
+                    height: 300px;
+                }
+                .date-ctn {
+                    top: 10px;
+                    left: 10px;
+                    position: absolute;
+                    text-align: center;
+                    padding: 5px;
+                    background-color: white;
+                    border: 1px solid $main-color;
+                    color: $main-color;
+                    .date {
+                        font-family: HKNova-Bold;
+                        font-size: 2em;
+                        color: $main-color;
+                    }
+                }
+                .new-ctn {
+                    display: block;
+                    position: relative;
+                    padding: 20px;
+                    height: 200px;
+                    background-color: white;
+                    p {
+                        text-align: left;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// =========================about page=======================
+.list-about-wrapper {
+    margin: 5% 0;
+    .list-about-ctn {
+        .about-p {
+            width: 67%;
+            margin: 0px auto;
+            text-align: center;
+            font-family: HKNova-Regular;
+        }
+        .main-about {
+            margin: 5% 0;
+            .about-item {
+                .about-content {
+                    text-align: center;
+                    h5 {
+                        line-height: 2rem;
+                        background-color: $main-color;
+                        font-family: HKNova-Bold;
+                        color: #fff;
+                    }
+                    p {
+                        font-family: HKNova-Regular;
+                    }
+                }
+            }
+        }
+    }
+    .what-more {
+        float: right;
+        a {
+            color: $main-color;
+            text-align: right;
+        }
+    }
+}
+
+//=========================partner============================
+.partner-ctn {
+    padding: 5% 0;
+}

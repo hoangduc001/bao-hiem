@@ -1,0 +1,294 @@
+.container-create-subject {
+    margin: 5% 0;
+    .title-create-subject {
+        text-align: center;
+        margin-bottom: 20px;
+        h2 {
+            font-family: HKNova-Bold;
+            color: $main-color;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+        }
+    }
+    .create-subject-detail {
+        min-height: 600px;
+        .tabs {
+            position: relative;
+            margin: 3rem 0;
+            height: 54.75rem;
+            font-family: HKNova-Bold;
+            &::after {
+                clear: both;
+            }
+        }
+        .tabs-learning {
+            .tab-label {
+                padding: .5rem 3.8rem;
+            }
+        }
+        .tabs::before,
+        .tabs::after {
+            content: "";
+            display: table;
+        }
+        .tab {
+            float: left;
+            width: 50%;
+        }
+        .tab-switch {
+            display: none;
+            &:checked {
+                &+.tab-label {
+                    background: #fff;
+                    color: $main-color;
+                    border-bottom: 0.25rem solid $main-color;
+                    transition: all 0.35s;
+                    z-index: 1;
+                    padding: .5rem 1rem;
+                    // top: -0.0625rem;
+                }
+                &+label {
+                    &+.tab-content {
+                        z-index: 2;
+                        opacity: 1;
+                        transition: all 0.35s;
+                    }
+                }
+            }
+        }
+        .tab-label {
+            position: relative;
+            display: block;
+            // line-height: 3em;
+            // height: 3em;
+            padding: .5rem 1rem;
+            border-bottom: 0.25rem solid #bdc3c7;
+            color: #000;
+            cursor: pointer;
+            top: 0;
+            transition: all 0.25s;
+            &:hover {
+                top: -0.25rem;
+                transition: top 0.25s;
+            }
+        }
+        .tab-content {
+            max-height: 60rem;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            padding: 15px;
+            background: #fff;
+            color: #2c3e50;
+            opacity: 0;
+            transition: all 0.35s;
+            overflow: auto;
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+                background-color: #ccc;
+            }
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: #ccc;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+                background-color: #0d723b;
+            }
+            .chapter-colapse {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+            .panel-group {
+                padding: 15px 0;
+                border-bottom: 1px dotted $main-color;
+                .panel-heading {
+                    .chapter-price {
+                        margin: auto;
+                        h5 {
+                            margin-bottom: 0;
+                            color: $main-color;
+                            font-family: HKNova-Bold;
+                        }
+                    }
+                    .chapter-get {
+                        .square-btn {
+                            padding: 5px 8px;
+                        }
+                    }
+                    .colapse-title {
+                        .left-title {
+                            .course-name {
+                                margin: inherit;
+                                background-color: transparent;
+                                h5 {
+                                    color: #000;
+                                    border: none;
+                                    padding: 5px 0;
+                                    font-family: HKNova-Bold;
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                        .right-title {
+                            background-color: transparent;
+                        }
+                    }
+                }
+                .panel-body {
+                    .chapter-detail {
+                        font-size: 1rem;
+                        font-family: HKNova-Regular;
+                        .detail-content {
+                            height: 9rem;
+                            overflow: auto;
+                            li {
+                                font-size: .8rem;
+                            }
+                            &::-webkit-scrollbar-track {
+                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                border-radius: 10px;
+                                background-color: #ccc;
+                            }
+                            &::-webkit-scrollbar {
+                                width: 3px;
+                                background-color: #ccc;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 10px;
+                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+                                background-color: #808a84;
+                            }
+                        }
+                    }
+                }
+            }
+            .library-ctn,
+            .custom-subject {
+                .form-create-subject {
+                    display: flex;
+                }
+                .form-create-question {
+                    .answer-content {
+                        display: flex;
+                    }
+                    .btn-create-question {
+                        text-align: right;
+                    }
+                }
+                .btn-create-subject {
+                    text-align: center;
+                    margin: 5%;
+                }
+            }
+            .library-subject,
+            .custom-subject {
+                ul {
+                    font-family: HKNova-Regular;
+                    span {
+                        font-family: HKNova-Bold;
+                    }
+                    span.add {
+                        color: $main-color;
+                    }
+                    span.quantity {
+                        color: $main-color;
+                    }
+                }
+                input[type="number"] {
+                    outline: none;
+                    // -moz-appearance: textfield;
+                    position: relative;
+                    // padding: 5px;
+                    padding-right: 25px;
+                }
+                input[type=number]::-webkit-inner-spin-button,
+                input[type=number]::-webkit-outer-spin-button {
+                    -webkit-appearance: show;
+                    appearance: show;
+                    color: $main-color;
+                }
+                input[type=number]::-webkit-inner-spin-button,
+                input[type=number]::-webkit-outer-spin-button {
+                    opacity: 1;
+                }
+                input[type=number]::-webkit-outer-spin-button,
+                input[type=number]::-webkit-inner-spin-button {
+                    -webkit-appearance: inner-spin-button !important;
+                    width: 25px;
+                    position: absolute;
+                    top: 0;
+                    right: 30px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.file-control:after {
+    content: attr(data-filename);
+}
+
+.input-file {
+    visibility: hidden;
+    position: absolute;
+}
+
+// ===================================create course=====================================
+.top-section-create-course {
+    padding: 20px;
+    p.name-select {
+        margin-bottom: .5rem;
+        display: inline-block;
+    }
+    .container-create-course {
+        font-size: 1rem;
+        font-family: HKNova-Bold;
+        .form-create-course {
+            display: flex;
+        }
+        .btn-add-des-course {
+            text-align: center;
+            margin: 20px;
+        }
+        .title-lecture {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 35% 65%;
+            .up-file {
+                input {
+                    &[type="text"] {
+                        width: 70% !important;
+                    }
+                }
+            }
+        }
+        .lecture-content {
+            background-color: white;
+            padding: 25px;
+        }
+        .btn-add-lecture {
+            right: 0;
+            margin: 30px 0;
+            float: right;
+            .btn-circle {
+                width: 50px;
+                height: 50px;
+                padding: 6px 0px;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.42857;
+                background-color: $main-color;
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
